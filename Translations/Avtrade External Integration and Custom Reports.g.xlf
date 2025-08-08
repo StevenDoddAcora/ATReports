@@ -1,0 +1,2314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="Avtrade External Integration and Custom Reports">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 4197241242 - Method 2032460410 - NamedType 536974701" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of files imported: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 2397027037 - NamedType 3941846598" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer code %1 does not exist.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 4242008 - NamedType 3941846598" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency code %1 does not exist.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 3015096738 - NamedType 3941846598" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value %1 cannot be evaluated</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 3892513083 - NamedType 3941846598" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value %1 cannot be evaluated</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 523390787 - NamedType 3941846598" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value %1 cannot be evaluated</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 459549006 - NamedType 3941846598" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value %1 cannot be evaluated</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 3258378522 - NamedType 3941846598" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value %1 cannot be evaluated</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 1371134443 - NamedType 3941846598" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account code %1 does not exist.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - NamedType 2091074059" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing ...</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - NamedType 2527131125" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IMPORT SUMMARY:\No. of documents in file(s): %1\No. of documents created: %2\No. of documents posted: %3</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 512209665 - Method 1293681259 - NamedType 2126793614" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of files exported: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 512209665 - Method 1293681259 - NamedType 4168205258" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAV to Quantum Export_</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2387038078 - Method 1665861916 - NamedType 3941846598" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Job Queue Parameter String is not supported</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2387038078 - Method 1139032845 - NamedType 1932824423" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing ...</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2387038078 - Method 58702386 - NamedType 1932824423" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing ...</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2387038078 - Method 1047075008 - NamedType 1932824423" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing ...</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2387038078 - Method 511084148 - NamedType 3984601750" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must select an email body or attachment in report selection for %1.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Log</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Page</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 4071038138 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 527741875 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date (Date)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 1749244648 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No. (InvRef)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 4015386345 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No. (AccountRef)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 1102334859 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Doc. No. (CustOrderNo)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 591684956 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No. (Product)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 429536019 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account No. (NomCode)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 2433689235 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity (Qty)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 3710425251 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Price (UnitPrice)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 3639413230 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Product Posting Gr. (TaxCode)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Control 2781337708 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code (CurrCode)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Action 1178193958 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Related Unposted Documents</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Action</note>
+        </trans-unit>
+        <trans-unit id="Page 249023176 - Action 1108259027 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open Related Posted Documents</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Action</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Special Report Selection - Purchase</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Page</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 887890843 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Usage</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 887890843 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quote,Blanket Order,Order,Invoice,Return Order,Credit Memo,Receipt,Return Shipment,Purchase Document - Test,Prepayment Document - Test,Remittance Jnl,Remittance Entries,P. Arch. Return Order</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 887890843 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies which type of document the report is used for.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 4154341761 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a number that indicates where this report is in the printing order.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 1272245069 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the object ID of the report.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 3046817188 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the display name of the report.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 1794945120 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that summarised information, such as invoice number, due date, and payment service link, will be inserted in the body of the email that you send.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 1083714199 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that the related document will be attached to the email.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 3318038509 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ID of the email body layout that is used.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2063228382 - Control 3004246684 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a description of the email body layout that is used.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Special Report Selections</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Page</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 2808374193 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Usage</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 2808374193 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remittance Jnl,Remittance Entries</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 2808374193 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies which type of document the report is used for.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 4184316645 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report ID</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 4184316645 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ID of the report.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 253704284 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Caption</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 253704284 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the report.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 2242446749 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Custom Layout Description</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 2242446749 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a description of the custom report layout.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 2017693789 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send To Email</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 2017693789 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that the report is used when sending emails.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 1794945120 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that summarised information, such as invoice number, due date, and payment service link, will be inserted in the body of the email that you send.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 3318038509 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the ID of the email body layout that is used.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - Control 3004246684 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a description of the email body layout that is used.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 821765813 - NamedType 163235925" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There is no custom report layout with %1 in the description.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Label</note>
+        </trans-unit>
+        <trans-unit id="Page 2627825214 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Aging Details</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Page</note>
+        </trans-unit>
+        <trans-unit id="Page 2627825214 - Control 3902947725 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Control</note>
+        </trans-unit>
+        <trans-unit id="Page 2627825214 - Action 3495859917 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Recalculate</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Control 1318632894 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It indicates which Text Enconding should be used when Exporting/Importing XMLPorts</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Control</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1427312253 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exposure (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 3405732863 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Exposure Manual-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 3405732863 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Exposure Manual-Import based on the client fiels</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 562022372 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Exposure Auto-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 562022372 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Exposure Auto-Import based on the server files</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 821689635 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 831762321 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Invoice Manual-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 831762321 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Invoice Manual-Import based on the client fiels</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1296429718 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Invoice Auto-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1296429718 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Invoice Auto-Import based on the server files</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 2141525479 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1424996695 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Credit Manual-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1424996695 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Credit Manual-Import based on the client fiels</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1517151388 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Credit Auto-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1517151388 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Credit Auto-Import based on the server files</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 36190024 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 3358627 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Currency Manual-Export (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 3358627 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Customer Currency Manual-Export based on the customer records</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 2550631796 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Currency Auto-Export (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 2550631796 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Customer Currency Auto-Export based on the customer records</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3715360391 - Action 4201469063 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Avtrade Rem. Advice</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3715360391 - Action 4201469063 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print the remittance advice before posting a payment journal and after posting a payment. This advice displays vendor invoice numbers, which helps vendors to perform reconciliations.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3715360391 - Action 2526342460 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Avtrade Email Rem. Advice</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3715360391 - Action 2526342460 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email the remittance advice per Vendor</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1516890301 - Action 4201469063 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Avtrade Rem. Advice</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1516890301 - Action 4201469063 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View which documents have been included in the payment.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1516890301 - Action 2526342460 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Avtrade Email Rem. Advice</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1516890301 - Action 2526342460 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email the remittance advice per Vendor</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2601095746 - Action 3349722004 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Special Document Layouts</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 677845420 - Action 1341881420 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Avtrade Aged Accounts Receivable</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 677845420 - Action 1341881420 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View an overview of when customer payments are due or overdue, divided into four periods. You must specify the date you want aging calculated from and the length of the period that each column will contain data for.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="Report 3814204093 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exposure Auto-Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 1419603763 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Auto-Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 3774405703 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Auto-Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 1655756649 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Currency Data Auto-Export</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 4152416624 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exposure Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 3680203450 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 495161222 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 3779701076 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Currency Data Export</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportDataItem 2072992664 - Property 1806354803" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - ReportDataItem</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Control 2346885236 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Control 3192306909 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Copies</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Control 3192306909 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many copies of the document to print.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Control 3662524380 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Internal Information</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Control 3662524380 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the printed report to show information that is only for internal use.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Control 3255118903 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Archive Document</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Control 3255118903 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether to archive the order.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Control 816368762 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Interaction</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - Control 816368762 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the program to log this interaction.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 2402208324" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 3626216759" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 515053971" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Your Order No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 3075460105" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Ref.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 1974540933" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Qty. Ordered</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 2819309835" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Product Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 302488546" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Supplier Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 2340408990" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Product Description</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 1893916576" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Price</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 1325038264" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Net Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 2754357174" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Net</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 528639626" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total VAT Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 1667227693" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Total</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 1668185060" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deliver To:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 509858123" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PURCHASE ORDER</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 1806968015" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Reg. No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - ReportLabel 2902130988" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is not a VAT Invoice</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 732759939" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order %1</source>
+          <note from="Developer" annotates="general" priority="2">%1 = Document No.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 1370456556" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page %1</source>
+          <note from="Developer" annotates="general" priority="2">%1 = Page No.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2645849790" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount Specification in </source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3283546407" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Local Currency</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3921243024" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exchange rate: %1/%2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2826867220" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 322581705" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Registration No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 1454106313" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Giro No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 1275674192" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2438826717" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2219219549" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 650077689" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2728513993" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 1216568958" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Header Dimensions</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3801332884" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Direct Unit Cost</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3411081103" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Discount %</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 232398666" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Discount on VAT</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 960460070" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Dimensions</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2893846144" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Details</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 132160432" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 232471621" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ship-to Address</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2780112871" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 1225323363" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>G/L Account No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3013644840" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prepayment Specification</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 182229247" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prepayment VAT Amount Specification</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3285233284" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 634581238" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Discount Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3126303398" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subtotal</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 1210262078" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT %</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 977652710" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 1396908878" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount Specification</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2012124496" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Identifier</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 1223243188" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Discount Base Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3691499681" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2096959425" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Base</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 1583171122" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3169568710" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Terms</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 203962742" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shipment Method</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2677110465" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prepmt. Payment Terms</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2862688884" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 3897674943" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1749030121 - NamedType 2189117947" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Allow Invoice Discount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportDataItem 1994964448 - Property 1806354803" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Filters</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - ReportDataItem</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2346885236 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 474480784 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 474480784 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date from which the report or batch job processes information.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2649176925 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2649176925 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date to which the report or batch job processes information.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3728957639 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3728957639 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter entries by Currency Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 120518645 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Overdue Entries</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 120518645 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want overdue entries to be shown separately for each currency.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3349558288 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2059574099 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include All Customers with Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2059574099 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want entries displayed for customers that have ledger entries at the end of the selected period.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 686806962 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include All Customers with a Balance</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 686806962 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want entries displayed for customers that have a balance at the end of the selected period.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3414096222 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Reversed Entries</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3414096222 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to include reversed entries in the report.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2809948940 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Unapplied Entries</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2809948940 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to include unapplied entries in the report.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 1184424257 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do not show Closed Entries</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 1184424257 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to hide closed entries.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3843728681 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ageing Band</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 4178264437 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Ageing Band</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 4178264437 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want an ageing band to be included in the document. If you place a check mark here, you must also fill in the Ageing Band Period Length and Ageing Band by fields.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 4278445754 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ageing Band Period Length</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 4278445754 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the length of each of the four periods in the ageing band, for example, enter "1M" for one month. The most recent period will end on the last day of the period in the Date Filter field.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 336339332 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Heading Type</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 336339332 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the column heading for the three periods will indicate a date interval or the number of days overdue.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 336339332 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Interval,Number of Days</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 1031320896 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aging Band by</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 1031320896 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date,Posting Date,Document Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 1031320896 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the ageing band will be calculated from the due date or from the posting date or form document date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 816368762 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Interaction</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 816368762 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that interactions with the contact are logged.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3797798969 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Aging Data</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3797798969 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If field is ticked, the system is updating Customer Aging Details so user can review it on page instead of the report</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2092947929 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Output Options</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3039415211 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Output</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3039415211 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print,Preview,PDF,Email,Excel,XML</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3039415211 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the output of the scheduled report, such as PDF or Word.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2089092709 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Chosen Output</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 2089092709 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how to output the report, such as Print or Excel.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 506008736 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email Options</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3593006799 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print remaining statements</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Control 3593006799 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to print remaining statements.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 4228570543" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>STATEMENT</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1032568717" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tel:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1412028175" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Accs Tel:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1779059018" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 806278067" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>To</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 413001010" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Agreed Terms:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 3123827636" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run as at Date:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 3127038945" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Date:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 3464902070" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All values are shown in</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 791839297" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 2027924286" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Ref</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1896753406" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Due</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1337012613" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Days Over</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 2821824900" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 4276752152" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debit</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 2192553353" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 965223736" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1235310197" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1635007597" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>30 - 59 days</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 3716802404" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>60 - 89 days</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 2495703675" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>90 - 119 days</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1308860466" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>120+ days</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 2245772854" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Value Overdue</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 2907653960" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Amount Due</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 3922274404" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Please remit to:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 2511815438" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 416272378" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IBAN:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 3949673103" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Swift:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1347658106" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank Sort:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - ReportLabel 1542941690" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3114637384" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entries %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3752334001" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Overdue Entries %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 95063322" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement </source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 1370456556" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Multicurrency Application</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2008153173" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Discount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2645849790" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rounding</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3283546407" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must specify the Ageing Band Period Length.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 1664139952" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must specify Ageing Band Ending Date.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 1026443335" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Summary by %1 (%2 by %3)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2939533186" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period Length is out of range.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2301836569" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date,Posting Date,Document Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 4214926420" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Application Writeoffs</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2424052996" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>-%1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 698237251" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2512069321" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 276525116" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Registration No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3655449964" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Giro No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3144910853" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 1931799952" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3162110670" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2209068532" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3982372241" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3303928736" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3401669194" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 58467362" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3136279037" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 106401415" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>..before</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2869507195" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2377105323" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3112881028" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3102655787" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 1460927981" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date must have a value.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 159342192" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date must have a value.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 3956382959" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start date must be earlier than End date.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 684809554" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 1422366932" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tel: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2742640227" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 439359491" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No: %1, IBAN: %2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - NamedType 2367809038" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Swift: %1, Bank Sort: %2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Method 3991716953 - NamedType 1127420597" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Before</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Method 3991716953 - NamedType 381523448" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>More than</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 3652041874 - Method 3991716953 - NamedType 1773344039" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>days</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remittance Advice - Journal</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 4228570543" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>REMITTANCE ADVICE</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 3817301937" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tel:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 142098671" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fax:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 1779059018" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 617250308" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Reg No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 1542941690" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 310525902" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Ref</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 423378968" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BACS/CHQ No</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 974777403" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Extra Ref</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 820846475" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NOTE: All values are shown in</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 4294012637" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ref</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 2318046708" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 4276752152" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debit</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 2192553353" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - ReportLabel 4048584294" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Paid</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 3216450982" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remittance Advice</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 1928308579" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 674998214" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fax No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 1306668226" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Reg. No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 3618206462" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 1784553205" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sort Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 474257480" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 1564621511" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Original Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 2728513993" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 4005889533" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Your Document No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 82581272" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Doc. Type</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 147172462" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Our Document No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 757272064" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remaining Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 2233190841" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pmt. Disc. Received</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 1982704652" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Curr. Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 3856651593" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Curr. Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 1583171122" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 1422366932" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tel: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1987023681 - NamedType 2742640227" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remittance Advice - Entries</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 4228570543" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>REMITTANCE ADVICE</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 3817301937" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tel:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 142098671" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fax:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 1779059018" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email:</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 617250308" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Reg No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 1542941690" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 310525902" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account Ref</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 423378968" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BACS/CHQ No</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 974777403" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Extra Ref</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 820846475" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NOTE: All values are shown in</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 4294012637" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ref</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 2318046708" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 4276752152" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Debit</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 2192553353" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - ReportLabel 4048584294" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Paid</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 2854782391" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remittance Advice</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 1928308579" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 674998214" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fax No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 1306668226" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Reg. No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 3618206462" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 474257480" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 1784553205" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sort Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 694817936" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 1624289647" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pmt. Disc. Taken</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 2421886058" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remaining Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 1564621511" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Original Amount</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 2997913496" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Your Document No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 3776799631" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Our Document No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 3856651593" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Curr. Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 3112881028" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 1583171122" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 1422366932" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tel: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 1272398792 - NamedType 2742640227" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 2628164274 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor (Filter)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Accounts Receivable (Avtrade)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 2346885236 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 2060407144 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged As Of</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 2060407144 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date that you want the ageing calculated for.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 3438973743 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ageing by</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 3438973743 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date,Posting Date,Document Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 3438973743 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the ageing will be calculated from the due date, the posting date, or the document date.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 2740290379 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period Length</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 2740290379 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the period for which data is shown in the report. For example, enter "1M" for one month, "30D" for thirty days, "3Q" for three quarters, or "5Y" for five years.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 4096492506 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Amounts in LCY</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 4096492506 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the report to specify the ageing per customer ledger entry.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 568987109 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Details</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 568987109 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the report to show the detailed entries that add up the total balance for each customer.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 336339332 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Heading Type</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 336339332 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Interval,Number of Days</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 336339332 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the column heading for the three periods will indicate a date interval or the number of days overdue.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 2035961037 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Page per Customer</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 2035961037 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if each customer's information is printed on a new page if you have chosen two or more customers to be included in the report.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 3997483721 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Currency Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - Control 3997483721 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want see report totals by different currency than LCY</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">RequestPage - Control</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 3857790676" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 1542941690" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 668085633" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Time</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 3408858916" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer From</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 471950767" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer To</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 1217235044" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date From</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 780372975" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date To</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 153702412" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction From</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 1661536647" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transaction To</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 3749473944" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Region From</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 723249627" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Region To</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 483401526" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inc Future Tran?</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 1844549" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exc Later Payments</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 3827679588" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A/C</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 1981706351" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 3990171118" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Limit</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 965223736" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 1235310197" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 3201054194" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period 1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 3037074255" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period 2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 3626735088" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period 3</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 4077918526" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Older</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 611261951" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Avg Days</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 2002047925" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total for Region</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - ReportLabel 824321583" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Totals</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 2476940767" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Not Due</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 3114637384" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Before</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 3752334001" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>days</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 95063322" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>More than</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 732759939" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged by %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 1370456556" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total for %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 2008153173" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged as of %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 2645849790" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged by %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 3921243024" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date,Posting Date,Document Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 1664139952" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Date Formula %1 cannot be used. Try to restate it. E.g. 1M+CM instead of CM+1M.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 4168233824" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>-%1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 2402552187" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Accounts Receivable</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 3193990627" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 3284058877" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All Amounts in LCY</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 2555393066" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Overdue Amounts</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 1707603408" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Original Amount </source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 3808507638" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 394537149" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 2244048076" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 1747274374" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 2813197814" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 1865626161" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total (LCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 269144572" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Specification</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Report 309095213 - NamedType 82002553" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Enter a date formula in the Period Length field.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Label</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aging Details</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Table</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 3165971454 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 3165971454 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer,Vendor</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 3902947725 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 1485336182 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Run at Date</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 4150168517 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current Balance (LCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 637964016 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 1-30 Days (LCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 684894753 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 31-60 Days (LCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 1445622162 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 61-90 Days (LCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 2038311491 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 91-120 Days (LCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 1748293044 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 121+ Days (LCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 2783935330 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Inv. Value Overdue (LCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 747073554 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Amount Due (LCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 2992231970 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Currency Code (TCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 2331376397 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Current Balance (TCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 479360136 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 1-30 Days (TCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 2418739305 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 31-60 Days (TCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 3264414282 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 61-90 Days (TCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 2196915371 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 91-120 Days (TCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 1610477516 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Debt 121+ Days (TCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 2274954490 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Inv. Value Overdue (TCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="Table 3922250010 - Field 2565865674 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Amount Due (TCY)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3917056660 - Field 1318632894 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XMLPort Text Encoding</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3917056660 - Field 1318632894 - Property 62802879" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MS-Dos,UTF-8,UTF-16,Windows</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension - Field</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 4152416624 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exposure Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - XmlPort</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3680203450 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - XmlPort</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 495161222 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - XmlPort</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2430132705 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Data Export</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - XmlPort</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2934360715 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AVT Export Generic CSV</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - XmlPort</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2934360715 - NamedType 3084275768" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The data to be exported is not structured correctly. The columns in the dataset must be sequential.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - Label</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2934360715 - NamedType 3376297776" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The data to be exported is not structured correctly. The lines in the dataset must be sequential.</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - Label</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2934360715 - NamedType 2779639592" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exporting line no. #1######</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - Label</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

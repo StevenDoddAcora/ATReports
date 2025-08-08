@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" original="Avtrade Custom Reports and Ext. Integration">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 4197241242 - Method 1245776364 - NamedType 536974701" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of files imported: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 1044823489 - NamedType 2518638014" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing ...</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 1044823489 - NamedType 2736905132" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IMPORT SUMMARY:\No of documents created: %1\No of documents posted: %2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 4101898920 - NamedType 536974701" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of files imported: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 900367573 - NamedType 2518638014" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing ...</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 900367573 - NamedType 2736905132" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>IMPORT SUMMARY:\No of documents created: %1\No of documents posted: %2</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 4197241242 - Method 2032460410 - NamedType 536974701" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of files imported: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 512209665 - Method 3184264923 - NamedType 2126793614" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of files exported: %1</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 512209665 - Method 3184264923 - NamedType 4168205258" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NAV to Quantum Export_</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1427312253 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exposure (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 3405732863 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Exposure Manual-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 3405732863 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Exposure Manual-Import based on the client fiels</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 562022372 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Exposure Auto-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 562022372 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Exposure Auto-Import based on the server files</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 821689635 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 831762321 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Invoice Manual-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 831762321 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Invoice Manual-Import based on the client fiels</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1296429718 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Invoice Auto-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1296429718 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Invoice Auto-Import based on the server files</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 2141525479 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1424996695 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Credit Manual-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1424996695 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Credit Manual-Import based on the client fiels</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1517151388 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantum Credit Auto-Import (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 1517151388 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Credit Auto-Import based on the server files</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 36190024 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 3358627 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Currency Manual-Export (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 3358627 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Customer Currency Manual-Export based on the customer records</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 2550631796 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Currency Auto-Export (TEST)</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3229201939 - Action 2550631796 - Property 1295455071" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It runs test Quantum Customer Currency Auto-Export based on the customer records</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
+        </trans-unit>
+        <trans-unit id="Report 3814204093 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exposure Auto-Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 1419603763 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Auto-Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 3774405703 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Auto-Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 1655756649 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Currency Data Auto-Export</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 4152416624 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exposure Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 3680203450 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 495161222 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="Report 3779701076 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Currency Data Export</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Report - Report</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 4152416624 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exposure Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - XmlPort</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3680203450 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - XmlPort</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 495161222 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Import</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - XmlPort</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2430132705 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Data Export</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort - XmlPort</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

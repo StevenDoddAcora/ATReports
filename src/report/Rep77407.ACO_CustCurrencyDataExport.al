@@ -1,4 +1,4 @@
-report 77407 "ACO_CustCurrencyDataExport"
+report 50919 "ACO_CustCurrencyDataExport"
 {
     Caption = 'Customer Currency Data Export';
     ProcessingOnly = true;
@@ -8,7 +8,8 @@ report 77407 "ACO_CustCurrencyDataExport"
 
     dataset
     {
-        dataitem(Customer; Customer){
+        dataitem(Customer; Customer)
+        {
             DataItemTableView = SORTING("No.");
             RequestFilterFields = "No.";
 

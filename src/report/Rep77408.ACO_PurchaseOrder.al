@@ -1,8 +1,8 @@
-report 77408 "ACO_PurchaseOrder"
+report 50920 "ACO_PurchaseOrder"
 {
 
     DefaultLayout = RDLC;
-    RDLCLayout = './src/report/layouts/Rep77408_RDLCLayout.rdlc';
+    RDLCLayout = './src/report/layouts/Rep50920_RDLCLayout.rdlc';
     Caption = 'Order';
     PreviewMode = PrintLayout;
 
@@ -10,7 +10,7 @@ report 77408 "ACO_PurchaseOrder"
     {
         dataitem("Purchase Header"; "Purchase Header")
         {
-            DataItemTableView = SORTING ("Document Type", "No.") WHERE ("Document Type" = CONST (Order));
+            DataItemTableView = SORTING("Document Type", "No.") WHERE("Document Type" = CONST(Order));
             RequestFilterFields = "No.", "Buy-from Vendor No.", "No. Printed";
             RequestFilterHeading = 'Purchase Order';
             column(DocType_PurchHeader; "Document Type")
@@ -72,10 +72,10 @@ report 77408 "ACO_PurchaseOrder"
             }
             dataitem(CopyLoop; "Integer")
             {
-                DataItemTableView = SORTING (Number);
+                DataItemTableView = SORTING(Number);
                 dataitem(PageLoop; "Integer")
                 {
-                    DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                    DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                     column(ReportTitleCopyText; STRSUBSTNO(Text004, CopyText))
                     {
                     }
@@ -99,7 +99,7 @@ report 77408 "ACO_PurchaseOrder"
                     }
                     column(CompanyInfoVATRegistrationNo; CompanyInfo."VAT Registration No.")
                     {
-                        
+
                     }
                     column(CompanyInfoFaxNo; CompanyInfo."Fax No.")
                     {
@@ -253,7 +253,7 @@ report 77408 "ACO_PurchaseOrder"
                     dataitem(DimensionLoop1; "Integer")
                     {
                         DataItemLinkReference = "Purchase Header";
-                        DataItemTableView = SORTING (Number) WHERE (Number = FILTER (1 ..));
+                        DataItemTableView = SORTING(Number) WHERE(Number = FILTER(1 ..));
                         column(HdrDimCaption; HdrDimCaptionLbl)
                         {
                         }
@@ -269,19 +269,19 @@ report 77408 "ACO_PurchaseOrder"
                             CLEAR(DimText);
                             Continue := false;
                             repeat
-                              OldDimText := DimText;
-                            if DimText = '' then
-                                DimText := STRSUBSTNO('%1 %2', DimSetEntry1."Dimension Code", DimSetEntry1."Dimension Value Code")
-                            else
-                                DimText :=
-                                  STRSUBSTNO(
-                                    '%1, %2 %3', DimText,
-                                    DimSetEntry1."Dimension Code", DimSetEntry1."Dimension Value Code");
-                            if STRLEN(DimText) > MAXSTRLEN(OldDimText) then begin
-                                DimText := OldDimText;
-                                Continue := true;
-                                exit;
-                            end;
+                                OldDimText := DimText;
+                                if DimText = '' then
+                                    DimText := STRSUBSTNO('%1 %2', DimSetEntry1."Dimension Code", DimSetEntry1."Dimension Value Code")
+                                else
+                                    DimText :=
+                                      STRSUBSTNO(
+                                        '%1, %2 %3', DimText,
+                                        DimSetEntry1."Dimension Code", DimSetEntry1."Dimension Value Code");
+                                if STRLEN(DimText) > MAXSTRLEN(OldDimText) then begin
+                                    DimText := OldDimText;
+                                    Continue := true;
+                                    exit;
+                                end;
                             until DimSetEntry1.NEXT = 0;
                         end;
 
@@ -293,9 +293,9 @@ report 77408 "ACO_PurchaseOrder"
                     }
                     dataitem("Purchase Line"; "Purchase Line")
                     {
-                        DataItemLink = "Document Type" = FIELD ("Document Type"), "Document No." = FIELD ("No.");
+                        DataItemLink = "Document Type" = FIELD("Document Type"), "Document No." = FIELD("No.");
                         DataItemLinkReference = "Purchase Header";
-                        DataItemTableView = SORTING ("Document Type", "Document No.", "Line No.");
+                        DataItemTableView = SORTING("Document Type", "Document No.", "Line No.");
 
                         trigger OnPreDataItem();
                         begin
@@ -304,7 +304,7 @@ report 77408 "ACO_PurchaseOrder"
                     }
                     dataitem(RoundLoop; "Integer")
                     {
-                        DataItemTableView = SORTING (Number);
+                        DataItemTableView = SORTING(Number);
                         column(LineAmt_PurchLine; PurchLine."Line Amount")
                         {
                             AutoFormatExpression = "Purchase Line"."Currency Code";
@@ -435,13 +435,14 @@ report 77408 "ACO_PurchaseOrder"
                         {
                         }
                         //>>FIX
-                        column(VendorItemNo_PurchLine; "Purchase Line"."Vendor Item No."){
+                        column(VendorItemNo_PurchLine; "Purchase Line"."Vendor Item No.")
+                        {
 
                         }
                         //<<FIX
                         dataitem(DimensionLoop2; "Integer")
                         {
-                            DataItemTableView = SORTING (Number) WHERE (Number = FILTER (1 ..));
+                            DataItemTableView = SORTING(Number) WHERE(Number = FILTER(1 ..));
                             column(LineDimCaption; LineDimCaptionLbl)
                             {
                             }
@@ -457,19 +458,19 @@ report 77408 "ACO_PurchaseOrder"
                                 CLEAR(DimText);
                                 Continue := false;
                                 repeat
-                                  OldDimText := DimText;
-                                if DimText = '' then
-                                    DimText := STRSUBSTNO('%1 %2', DimSetEntry2."Dimension Code", DimSetEntry2."Dimension Value Code")
-                                else
-                                    DimText :=
-                                      STRSUBSTNO(
-                                        '%1, %2 %3', DimText,
-                                        DimSetEntry2."Dimension Code", DimSetEntry2."Dimension Value Code");
-                                if STRLEN(DimText) > MAXSTRLEN(OldDimText) then begin
-                                    DimText := OldDimText;
-                                    Continue := true;
-                                    exit;
-                                end;
+                                    OldDimText := DimText;
+                                    if DimText = '' then
+                                        DimText := STRSUBSTNO('%1 %2', DimSetEntry2."Dimension Code", DimSetEntry2."Dimension Value Code")
+                                    else
+                                        DimText :=
+                                          STRSUBSTNO(
+                                            '%1, %2 %3', DimText,
+                                            DimSetEntry2."Dimension Code", DimSetEntry2."Dimension Value Code");
+                                    if STRLEN(DimText) > MAXSTRLEN(OldDimText) then begin
+                                        DimText := OldDimText;
+                                        Continue := true;
+                                        exit;
+                                    end;
                                 until DimSetEntry2.NEXT = 0;
                             end;
 
@@ -495,9 +496,9 @@ report 77408 "ACO_PurchaseOrder"
                             then
                                 PurchLine."Line Amount" := 0;
 
-                            if("Purchase Line"."Cross-Reference No." <> '') and(not ShowInternalInfo) then
+                            if ("Purchase Line"."Cross-Reference No." <> '') and (not ShowInternalInfo) then
                                 "Purchase Line"."No." := "Purchase Line"."Cross-Reference No.";
-                            if(PurchLine.Type = PurchLine.Type::"G/L Account") and(not ShowInternalInfo) then
+                            if (PurchLine.Type = PurchLine.Type::"G/L Account") and (not ShowInternalInfo) then
                                 "Purchase Line"."No." := '';
                             AllowInvDisctxt := FORMAT("Purchase Line"."Allow Invoice Disc.");
                             TotalSubTotal += "Purchase Line"."Line Amount";
@@ -513,11 +514,11 @@ report 77408 "ACO_PurchaseOrder"
                         trigger OnPreDataItem();
                         begin
                             MoreLines := PurchLine.FIND('+');
-                            while MoreLines and(PurchLine.Description = '') and(PurchLine."Description 2" = '') and
-                                  (PurchLine."No." = '') and(PurchLine.Quantity = 0) and
+                            while MoreLines and (PurchLine.Description = '') and (PurchLine."Description 2" = '') and
+                                  (PurchLine."No." = '') and (PurchLine.Quantity = 0) and
                                   (PurchLine.Amount = 0)
                             do
-                              MoreLines := PurchLine.NEXT(-1) <> 0;
+                                MoreLines := PurchLine.NEXT(-1) <> 0;
                             if not MoreLines then
                                 CurrReport.BREAK;
                             PurchLine.SETRANGE("Line No.", 0, PurchLine."Line No.");
@@ -527,7 +528,7 @@ report 77408 "ACO_PurchaseOrder"
                     }
                     dataitem(VATCounter; "Integer")
                     {
-                        DataItemTableView = SORTING (Number);
+                        DataItemTableView = SORTING(Number);
                         column(VATAmtLineVATBase; VATAmountLine."VAT Base")
                         {
                             AutoFormatExpression = "Purchase Header"."Currency Code";
@@ -578,7 +579,7 @@ report 77408 "ACO_PurchaseOrder"
                     }
                     dataitem(VATCounterLCY; "Integer")
                     {
-                        DataItemTableView = SORTING (Number);
+                        DataItemTableView = SORTING(Number);
                         column(VALExchRate; VALExchRate)
                         {
                         }
@@ -607,7 +608,7 @@ report 77408 "ACO_PurchaseOrder"
 
                         trigger OnPreDataItem();
                         begin
-                            if(not GLSetup."Print VAT specification in LCY") or
+                            if (not GLSetup."Print VAT specification in LCY") or
                                ("Purchase Header"."Currency Code" = '') or
                                (VATAmountLine.GetTotalVATAmount = 0)
                             then
@@ -627,7 +628,7 @@ report 77408 "ACO_PurchaseOrder"
                     }
                     dataitem(Total2; "Integer")
                     {
-                        DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                        DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                         column(PayToVendNo_PurchHeader; "Purchase Header"."Pay-to Vendor No.")
                         {
                         }
@@ -670,7 +671,7 @@ report 77408 "ACO_PurchaseOrder"
                     }
                     dataitem(Total3; "Integer")
                     {
-                        DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                        DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                         column(SellToCustNo_PurchHeader; "Purchase Header"."Sell-to Customer No.")
                         {
                         }
@@ -715,7 +716,7 @@ report 77408 "ACO_PurchaseOrder"
                     }
                     dataitem(PrepmtLoop; "Integer")
                     {
-                        DataItemTableView = SORTING (Number) WHERE (Number = FILTER (1 ..));
+                        DataItemTableView = SORTING(Number) WHERE(Number = FILTER(1 ..));
                         column(PrepmtLineAmount; PrepmtLineAmount)
                         {
                             AutoFormatExpression = "Purchase Header"."Currency Code";
@@ -770,7 +771,7 @@ report 77408 "ACO_PurchaseOrder"
                         }
                         dataitem(PrepmtDimLoop; "Integer")
                         {
-                            DataItemTableView = SORTING (Number) WHERE (Number = FILTER (1 ..));
+                            DataItemTableView = SORTING(Number) WHERE(Number = FILTER(1 ..));
                             column(DummyColumn; 0)
                             {
                             }
@@ -786,19 +787,19 @@ report 77408 "ACO_PurchaseOrder"
                                 CLEAR(DimText);
                                 Continue := false;
                                 repeat
-                                  OldDimText := DimText;
-                                if DimText = '' then
-                                    DimText := STRSUBSTNO('%1 %2', PrepmtDimSetEntry."Dimension Code", PrepmtDimSetEntry."Dimension Value Code")
-                                else
-                                    DimText :=
-                                      STRSUBSTNO(
-                                        '%1, %2 %3', DimText,
-                                        PrepmtDimSetEntry."Dimension Code", PrepmtDimSetEntry."Dimension Value Code");
-                                if STRLEN(DimText) > MAXSTRLEN(OldDimText) then begin
-                                    DimText := OldDimText;
-                                    Continue := true;
-                                    exit;
-                                end;
+                                    OldDimText := DimText;
+                                    if DimText = '' then
+                                        DimText := STRSUBSTNO('%1 %2', PrepmtDimSetEntry."Dimension Code", PrepmtDimSetEntry."Dimension Value Code")
+                                    else
+                                        DimText :=
+                                          STRSUBSTNO(
+                                            '%1, %2 %3', DimText,
+                                            PrepmtDimSetEntry."Dimension Code", PrepmtDimSetEntry."Dimension Value Code");
+                                    if STRLEN(DimText) > MAXSTRLEN(OldDimText) then begin
+                                        DimText := OldDimText;
+                                        Continue := true;
+                                        exit;
+                                    end;
                                 until PrepmtDimSetEntry.NEXT = 0;
 
                                 if Number > 1 then
@@ -842,7 +843,7 @@ report 77408 "ACO_PurchaseOrder"
                     }
                     dataitem(PrepmtVATCounter; "Integer")
                     {
-                        DataItemTableView = SORTING (Number);
+                        DataItemTableView = SORTING(Number);
                         column(PrepmtVATAmtLineVATAmt; PrepmtVATAmountLine."VAT Amount")
                         {
                             AutoFormatExpression = "Purchase Header"."Currency Code";
@@ -1215,8 +1216,7 @@ report 77408 "ACO_PurchaseOrder"
 
     local procedure FormatDocumentFields(PurchaseHeader: Record "Purchase Header");
     begin
-        with PurchaseHeader do
-        begin
+        with PurchaseHeader do begin
             FormatDocument.SetTotalLabels("Currency Code", TotalText, TotalInclVATText, TotalExclVATText);
             FormatDocument.SetPurchaser(SalesPurchPerson, "Purchaser Code", PurchaserText);
             FormatDocument.SetPaymentTerms(PaymentTerms, "Payment Terms Code", "Language Code");

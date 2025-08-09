@@ -1,4 +1,4 @@
-report 77403 "ACO_CustCurrencyDataAutoExport"
+report 50915 "ACO_CustCurrencyDataAutoExport"
 {
     Caption = 'Customer Currency Data Auto-Export';
     ProcessingOnly = true;

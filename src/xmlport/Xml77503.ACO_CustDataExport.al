@@ -1,4 +1,4 @@
-xmlport 77503 "ACO_CustDataExport"
+xmlport 50929 "ACO_CustDataExport"
 {
     //#region "Documentation"
     //1.1.0.2018 LBR 11/06/2019 - New object crated for Export to CSV (Initial Spec point 3.3);
@@ -71,7 +71,7 @@ xmlport 77503 "ACO_CustDataExport"
                 begin
                     //>>1.3.9.2018
                     ColumnACOCreditLimitTCY := DELCHR(FORMAT(Customer.ACO_CreditLimitTCY), '=', ',');
-                    ColumnACOBalanceECY := DELCHR (FORMAT(Customer.ACO_BalanceECY), '=', ',');
+                    ColumnACOBalanceECY := DELCHR(FORMAT(Customer.ACO_BalanceECY), '=', ',');
                     //<<1.3.9.2018
                     Column5 := '0';
                     Column6 := '0';
@@ -117,22 +117,22 @@ xmlport 77503 "ACO_CustDataExport"
             currXMLport.TextEncoding := currXMLport.TextEncoding::UTF8;
         end else begin
             case Setup.ACO_XMLPortTextEnconding of
-          Setup.ACO_XMLPortTextEnconding::"MS-Dos" :
-            begin
-                currXMLport.TextEncoding := currXMLport.TextEncoding::MSDos;
-            end;  //>> End MS-DOS
-            Setup.ACO_XMLPortTextEnconding::"UTF-16" :
-            begin
-                currXMLport.TextEncoding := currXMLport.TextEncoding::UTF16;
-            end;
-            Setup.ACO_XMLPortTextEnconding::"UTF-8" :
-            begin
-                currXMLport.TextEncoding := currXMLport.TextEncoding::UTF8;
-            end;
-            Setup.ACO_XMLPortTextEnconding::Windows :
-            begin
-                currXMLport.TextEncoding := currXMLport.TextEncoding::Windows;
-            end;
+                Setup.ACO_XMLPortTextEnconding::"MS-Dos":
+                    begin
+                        currXMLport.TextEncoding := currXMLport.TextEncoding::MSDos;
+                    end;  //>> End MS-DOS
+                Setup.ACO_XMLPortTextEnconding::"UTF-16":
+                    begin
+                        currXMLport.TextEncoding := currXMLport.TextEncoding::UTF16;
+                    end;
+                Setup.ACO_XMLPortTextEnconding::"UTF-8":
+                    begin
+                        currXMLport.TextEncoding := currXMLport.TextEncoding::UTF8;
+                    end;
+                Setup.ACO_XMLPortTextEnconding::Windows:
+                    begin
+                        currXMLport.TextEncoding := currXMLport.TextEncoding::Windows;
+                    end;
             end;  //>> End Case
         end;
     end;

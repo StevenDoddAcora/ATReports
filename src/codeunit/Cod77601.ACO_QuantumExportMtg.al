@@ -1,16 +1,17 @@
-codeunit 77601 "ACO_QuantumExportMtg"
+codeunit 50901 "ACO_QuantumExportMtg"
 {
     //#region "Documentation"
     //1.2.0.2018 LBR 13/06/2019 - New object created for NAV to Excel export (Init Spec point 3.3)
     //#endregion "Documentation"
 
-    Permissions = TableData "Cust. Ledger Entry"=r,TableData "Detailed Cust. Ledg. Entry"=r;
+    Permissions = TableData "Cust. Ledger Entry" = r, TableData "Detailed Cust. Ledg. Entry" = r;
 
     //#region QuantumExportFunctions
     procedure CreateFilterForExportCustomerCurrData(var Customer: Record Customer)
     begin
         gCustomer.CopyFilters(Customer);
     end;
+
     procedure ManuallyExportCustomerCurrData()
     var
         GeneralFunctions: Codeunit ACO_GeneralFunctions;
@@ -20,10 +21,10 @@ codeunit 77601 "ACO_QuantumExportMtg"
 
         ExportCustomerCurrData('');
     end;
-    
+
     procedure AutoExportCustomerCurrData();
     var
-        tempBlob: Record TempBlob temporary;
+        tempBlob: Codeunit "Temp Blob";
         outStr: OutStream;
         inStr: InStream;
         ImportFileName: Text;
@@ -42,8 +43,8 @@ codeunit 77601 "ACO_QuantumExportMtg"
         GeneralFunctions.RecalculateCustomerCurrencyData(gCustomer, Today);
 
         // Export File
-        ExportCustomerCurrData(GeneralFunctions.AddSlashAtTheEnd(AdditionalSetup.ACO_QuantumExportLocation) + 
-            FileNamLbl + 
+        ExportCustomerCurrData(GeneralFunctions.AddSlashAtTheEnd(AdditionalSetup.ACO_QuantumExportLocation) +
+            FileNamLbl +
             Format(CurrentDateTime, 0, '<year4><month,2><day,2>_<hours24><minutes,2>.csv'));
 
         // Move File to Archive
@@ -55,21 +56,22 @@ codeunit 77601 "ACO_QuantumExportMtg"
 
     local procedure ExportCustomerCurrData(pFile: text)
     var
-        tempBlob: Record TempBlob temporary;
+        tempBlob: Codeunit "Temp Blob";
+        fileMgt: Codeunit "File Management";
         outStr: OutStream;
-        CustDataExport : XmlPort ACO_CustDataExport;
+        CustDataExport: XmlPort ACO_CustDataExport;
     begin
         // IF the parameter have a value then it is auto-export otherwise run xml port in the normal way to ask for a file
-        if(pFile <> '') then begin
+        if (pFile <> '') then begin
             //Prepare File
-            tempBlob.Blob.CreateOutStream(outStr);
+            tempBlob.CreateOutStream(outStr);
             //Import File
             CustDataExport.Filename := pFile;
             CustDataExport.SetDestination(outStr);
             //CustDataExport.Run()
             CustDataExport.Export();
 
-            tempBlob.Blob.Export(pFile);
+            fileMgt.BLOBExportToServerFile(tempBlob, pFile);
         end else begin
             if (gCustomer.GetFilters() <> '') then
                 CustDataExport.SetTableView(gCustomer);
@@ -80,10 +82,10 @@ codeunit 77601 "ACO_QuantumExportMtg"
     //#endregion QuantumExportFunctions
 
     //#region HelpFunctions
-    
+
     local procedure CalcCustomerBalance(pCustomerCode: Code[20]; pCurrencyCode: code[20]; pDate: Date) ReturnValue: Decimal;
     var
-        DetailedCustLedgEntry : Record "Detailed Cust. Ledg. Entry";
+        DetailedCustLedgEntry: Record "Detailed Cust. Ledg. Entry";
         CustLedgerEntry: Record "Cust. Ledger Entry";
     begin
         GetGenrealLegerSetup();
@@ -92,19 +94,19 @@ codeunit 77601 "ACO_QuantumExportMtg"
         //DetailedCustLedgEntry.SETFILTER(COPYFILTER("Global Dimension 1 Filter",DetailedCustLedgEntry."Initial Entry Global Dim. 1");
         //DetailedCustLedgEntry.SETFILTER(COPYFILTER("Global Dimension 2 Filter",DetailedCustLedgEntry."Initial Entry Global Dim. 2");
         if (pDate <> 0D) then
-            DetailedCustLedgEntry.SETFILTER("Posting Date",'<=%1',pDate);
+            DetailedCustLedgEntry.SETFILTER("Posting Date", '<=%1', pDate);
         if (pCurrencyCode = '') or (pCurrencyCode = GenLedgerSetup."LCY Code") then
             DetailedCustLedgEntry.SETFILTER("Currency Code", '%1|%2', '', pCurrencyCode)
         else
             DetailedCustLedgEntry.SETRANGE("Currency Code", pCurrencyCode);
         DetailedCustLedgEntry.CalcSums(Amount);
-        
+
         exit(DetailedCustLedgEntry.Amount);
     end;
 
     local procedure GetActiveExchRate(pCurrCode: Code[20]) ReturnValue: Decimal;
     var
-        CurrExchRate : Record "Currency Exchange Rate";
+        CurrExchRate: Record "Currency Exchange Rate";
     begin
         CurrExchRate.SetRange("Currency Code", pCurrCode);
         if CurrExchRate.FindLast() then
@@ -112,21 +114,23 @@ codeunit 77601 "ACO_QuantumExportMtg"
 
         exit(0);
     end;
+
     local procedure GetAdditionalSetup()
     begin
         if AdditionalSetup.ACO_ExportCurrency = '' then
             AdditionalSetup.GET();
     end;
+
     local procedure GetGenrealLegerSetup()
     begin
         if (GenLedgerSetup."LCY Code" = '') then
-          GenLedgerSetup.GET();
+            GenLedgerSetup.GET();
     end;
     //#endregion HelpFunctions
 
     var
         AdditionalSetup: Record ACO_AdditionalSetup;
         GenLedgerSetup: Record "General Ledger Setup";
-        gCustomer: Record Customer;        
+        gCustomer: Record Customer;
 
 }

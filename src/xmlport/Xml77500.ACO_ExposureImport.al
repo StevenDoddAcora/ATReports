@@ -1,4 +1,4 @@
-xmlport 77500 "ACO_ExposureImport"
+xmlport 50926 "ACO_ExposureImport"
 {
     //#region "Documentation"
     //1.1.0.2018 LBR 11/06/2019 - New object crated for Quantum to NAV functionality (Initial Spec point 3.2);
@@ -95,7 +95,7 @@ xmlport 77500 "ACO_ExposureImport"
                     lExposure: Decimal;
                     lCustomer: Record Customer;
                 begin
-                    if(StrPos(UPPERCASE(Column_CustomerNo), 'ACCOUNTREF') = 0) then begin
+                    if (StrPos(UPPERCASE(Column_CustomerNo), 'ACCOUNTREF') = 0) then begin
                         // If find record then update NAV values:
                         if Column_CustomerNo <> '' then
                             EVALUATE(lCustomerNo, Column_CustomerNo);
@@ -105,10 +105,10 @@ xmlport 77500 "ACO_ExposureImport"
                                 EVALUATE(lExposure, Column_Exposure);
 
                             //if lExposure <> 0 then begin // FIX to allow import 0
-                                if lCustomer.GET(lCustomerNo) then begin
-                                    lCustomer.VALIDATE(ACO_Exposure, lExposure);
-                                    lCustomer.MODIFY(FALSE);
-                                end;
+                            if lCustomer.GET(lCustomerNo) then begin
+                                lCustomer.VALIDATE(ACO_Exposure, lExposure);
+                                lCustomer.MODIFY(FALSE);
+                            end;
                             //end;
                         end;
                     end;
@@ -176,22 +176,22 @@ xmlport 77500 "ACO_ExposureImport"
             currXMLport.TextEncoding := currXMLport.TextEncoding::UTF8;
         end else begin
             case Setup.ACO_XMLPortTextEnconding of
-          Setup.ACO_XMLPortTextEnconding::"MS-Dos" :
-            begin
-                currXMLport.TextEncoding := currXMLport.TextEncoding::MSDos;
-            end;  //>> End MS-DOS
-            Setup.ACO_XMLPortTextEnconding::"UTF-16" :
-            begin
-                currXMLport.TextEncoding := currXMLport.TextEncoding::UTF16;
-            end;
-            Setup.ACO_XMLPortTextEnconding::"UTF-8" :
-            begin
-                currXMLport.TextEncoding := currXMLport.TextEncoding::UTF8;
-            end;
-            Setup.ACO_XMLPortTextEnconding::Windows :
-            begin
-                currXMLport.TextEncoding := currXMLport.TextEncoding::Windows;
-            end;
+                Setup.ACO_XMLPortTextEnconding::"MS-Dos":
+                    begin
+                        currXMLport.TextEncoding := currXMLport.TextEncoding::MSDos;
+                    end;  //>> End MS-DOS
+                Setup.ACO_XMLPortTextEnconding::"UTF-16":
+                    begin
+                        currXMLport.TextEncoding := currXMLport.TextEncoding::UTF16;
+                    end;
+                Setup.ACO_XMLPortTextEnconding::"UTF-8":
+                    begin
+                        currXMLport.TextEncoding := currXMLport.TextEncoding::UTF8;
+                    end;
+                Setup.ACO_XMLPortTextEnconding::Windows:
+                    begin
+                        currXMLport.TextEncoding := currXMLport.TextEncoding::Windows;
+                    end;
             end;  //>> End Case
         end;
     end;

@@ -1,8 +1,8 @@
-page 77202 "ACO_SpecialVendRepSelPurch"
+page 50902 "ACO_SpecialVendRepSelPurch"
 {
     //#region "Documentation"
-    // 1.3.5.2018 LBR 01/10/2019 - new object created for CHG003332 (E-mailing Remittance). We do want to use standard NAV to send emials, however
-    //      this version of NAV does not allow to extends standard option fields, therfore we will use P.Arch. Quote,P.Arch. Order for bespoke report purpose
+    // 1.3.5.2018 LBR 01/10/2019 - new object created for CHG003332 (E-mailing Remittance). Uses custom enum extension
+    //      ACO_ReportSelectionUsage_Ext with values ACO_Remittance_Journal and ACO_Remittance_Entries for bespoke report purpose
     //#endregion "Documentation"
 
     Caption = 'Vendor Special Report Selections';
@@ -29,25 +29,25 @@ page 77202 "ACO_SpecialVendRepSelPurch"
                     begin
                         case Usage2 of
                             Usage2::"Remittance Jnl":
-                                Usage := Usage::"P.Arch. Quote";
+                                Rec."Usage" := Rec.Usage::"P.Arch.Quote";
                             Usage2::"Remittance Entries":
-                                Usage := Usage::"P.Arch. Order";
+                                Rec."Usage" := Rec.Usage::"P.Arch.Order";
                         end;
                     end;
                 }
-                field(ReportID; "Report ID")
+                field(ReportID; Rec."Report ID")
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Report ID';
                     ToolTip = 'Specifies the ID of the report.';
                 }
-                field(ReportCaption; "Report Caption")
+                field(ReportCaption; Rec."Report Caption")
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Report Caption';
                     ToolTip = 'Specifies the name of the report.';
                 }
-                field("Custom Report Description"; "Custom Report Description")
+                field("Custom Report Description"; Rec."Custom Report Description")
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Custom Layout Description';
@@ -57,13 +57,13 @@ page 77202 "ACO_SpecialVendRepSelPurch"
 
                     trigger OnDrillDown();
                     begin
-                        LookupCustomReportDescription;
+                        Rec.LookupCustomReportDescription;
                         CurrPage.UPDATE(true);
                     end;
 
                     trigger OnLookup(var Text: Text): Boolean;
                     begin
-                        LookupCustomReportDescription;
+                        Rec.LookupCustomReportDescription;
                         CurrPage.UPDATE(true);
                     end;
 
@@ -71,38 +71,38 @@ page 77202 "ACO_SpecialVendRepSelPurch"
                     var
                         CustomReportLayout: Record "Custom Report Layout";
                     begin
-                        if "Custom Report Description" = '' then begin
-                            VALIDATE("Custom Report Layout Code", '');
-                            MODIFY(true);
+                        if Rec."Custom Report Description" = '' then begin
+                            Rec.VALIDATE("Custom Report Layout Code", '');
+                            Rec.MODIFY(true);
                         end else begin
-                            CustomReportLayout.SETRANGE("Report ID", "Report ID");
-                            CustomReportLayout.SETFILTER(Description, STRSUBSTNO('@*%1*', "Custom Report Description"));
+                            CustomReportLayout.SETRANGE("Report ID", Rec."Report ID");
+                            CustomReportLayout.SETFILTER(Description, STRSUBSTNO('@*%1*', Rec."Custom Report Description"));
                             if not CustomReportLayout.FINDFIRST then
-                                ERROR(CouldNotFindCustomReportLayoutErr, "Custom Report Description");
+                                ERROR(CouldNotFindCustomReportLayoutErr, Rec."Custom Report Description");
 
-                            VALIDATE("Custom Report Layout Code", CustomReportLayout.Code);
-                            MODIFY(true);
+                            Rec.VALIDATE("Custom Report Layout Code", CustomReportLayout.Code);
+                            Rec.MODIFY(true);
                         end;
                     end;
                 }
-                field(SendToEmail; "Send To Email")
+                field(SendToEmail; Rec."Send To Email")
                 {
                     ApplicationArea = Basic, Suite;
                     Caption = 'Send To Email';
                     ToolTip = 'Specifies that the report is used when sending emails.';
                 }
-                field("Use for Email Body"; "Use for Email Body")
+                field("Use for Email Body"; Rec."Use for Email Body")
                 {
                     ApplicationArea = Basic, Suite;
                     ToolTip = 'Specifies that summarised information, such as invoice number, due date, and payment service link, will be inserted in the body of the email that you send.';
                 }
-                field("Email Body Layout Code"; "Email Body Layout Code")
+                field("Email Body Layout Code"; Rec."Email Body Layout Code")
                 {
                     ApplicationArea = Advanced;
                     ToolTip = 'Specifies the ID of the email body layout that is used.';
                     Visible = false;
                 }
-                field("Email Body Layout Description"; "Email Body Layout Description")
+                field("Email Body Layout Description"; Rec."Email Body Layout Description")
                 {
                     ApplicationArea = Basic, Suite;
                     DrillDown = true;
@@ -111,13 +111,13 @@ page 77202 "ACO_SpecialVendRepSelPurch"
 
                     trigger OnDrillDown();
                     begin
-                        LookupEmailBodyDescription;
+                        Rec.LookupEmailBodyDescription;
                         CurrPage.UPDATE(true);
                     end;
 
                     trigger OnLookup(var Text: Text): Boolean;
                     begin
-                        LookupEmailBodyDescription;
+                        Rec.LookupEmailBodyDescription;
                         CurrPage.UPDATE(true);
                     end;
                 }
@@ -137,9 +137,7 @@ page 77202 "ACO_SpecialVendRepSelPurch"
     trigger OnNewRecord(BelowxRec: Boolean);
     begin
         // Set the default usage to the same as the page default.
-        if Usage = 0 then
-            Usage := Usage::"P.Arch. Quote";
-
+        Rec.Usage := Rec.Usage::"P.Arch.Quote";
         MapTableUsageValueToPageValue;
     end;
 
@@ -151,10 +149,10 @@ page 77202 "ACO_SpecialVendRepSelPurch"
     var
         CustomReportSelection: Record "Custom Report Selection";
     begin
-        case Usage of
-            CustomReportSelection.Usage::"P.Arch. Quote":
+        case Rec.Usage of
+            CustomReportSelection.Usage::"P.Arch.Quote":
                 Usage2 := Usage2::"Remittance Jnl";
-            CustomReportSelection.Usage::"P.Arch. Order":
+            CustomReportSelection.Usage::"P.Arch.Order":
                 Usage2 := Usage2::"Remittance Entries";
         end;
     end;

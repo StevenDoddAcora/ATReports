@@ -1,4 +1,4 @@
-report 77412 "ACO_VendorFilter"
+report 50924 "ACO_VendorFilter"
 {
     //#region "Documentation"
     // 1.3.5.2018 LBR 01/10/2019 - new object created for CHG003332 (E-mailing Remittance). We do want to use standard NAV to send emials, however
@@ -8,7 +8,7 @@ report 77412 "ACO_VendorFilter"
     Caption = 'Vendor (Filter)';
     ProcessingOnly = true;
     ShowPrintStatus = false;
-    
+
     dataset
     {
         dataitem(Vendor; Vendor)
@@ -24,7 +24,7 @@ report 77412 "ACO_VendorFilter"
 
             trigger OnAfterGetRecord();
             begin
-                
+
                 CurrReport.Break;
             end;
         }
@@ -51,7 +51,7 @@ report 77412 "ACO_VendorFilter"
         }
     }
 
-    procedure GetVendor(var rVendor: Record vendor) :boolean;
+    procedure GetVendor(var rVendor: Record vendor): boolean;
     begin
         rVendor.CopyFilters(gVendor);
         exit(gRepRun);

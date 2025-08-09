@@ -1,4 +1,4 @@
-pageextension 77302 "ACO_VendorLedgerEntry_Ext002" extends "Vendor Ledger Entries"
+pageextension 50965 "ACO_VendorLedgerEntry_Ext002" extends "Vendor Ledger Entries"
 {
     //#region "Documentation"
     // 1.3.2.2018 LBR 23/08/2019 - new action to print Remittance report
@@ -11,7 +11,8 @@ pageextension 77302 "ACO_VendorLedgerEntry_Ext002" extends "Vendor Ledger Entrie
 
     actions
     {
-        modify("&Rem. Advice"){
+        modify("&Rem. Advice")
+        {
             Visible = false;
             Enabled = false;
         }
@@ -27,7 +28,7 @@ pageextension 77302 "ACO_VendorLedgerEntry_Ext002" extends "Vendor Ledger Entrie
                 PromotedIsBig = true;
                 Promoted = true;
                 PromotedOnly = true;
-                PromotedCategory = Report;                
+                PromotedCategory = Report;
 
                 trigger OnAction();
                 var

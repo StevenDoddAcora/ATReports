@@ -1,132 +1,133 @@
-page 77200 "ACO_QuantumImportLog"
+page 50905 "ACO_QuantumImportLog"
 {
     //#region "Documentation"
     // 1.3.6.2018 LBR 08/10/2019 - captions has been changed
     // 1.3.8.2018 LBR 24/10/2019 - Snagging New document Date added;
+    // FUNCTIONALITY RESTORED FROM 2018 AL SOURCE - External table dependency ACO_ImportLog
     //#endregion "Documentation"
 
     PageType = List;
     Caption = 'Import Log';
     ApplicationArea = All;
     UsageCategory = History;
-    //TODO make it not editable
-    //Editable = false;
-    SourceTable = ACO_ImportLog;
-    
+    //Make page read-only as per original specification
+    Editable = false;
+    SourceTable = ACO_ImportLog; // External extension dependency - AvTrade Core Application
+
     layout
     {
         area(Content)
         {
             repeater(Group)
             {
-                field(ACO_ImportType; ACO_ImportType)
+                field(ACO_ImportType; Rec.ACO_ImportType)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_ImportNo; ACO_ImportNo)
+                field(ACO_ImportNo; Rec.ACO_ImportNo)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_FileName; ACO_FileName)
+                field(ACO_FileName; Rec.ACO_FileName)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_EntryNo; ACO_EntryNo)
+                field(ACO_EntryNo; Rec.ACO_EntryNo)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_FileLineNo; ACO_FileLineNo)
+                field(ACO_FileLineNo; Rec.ACO_FileLineNo)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_PostingDate; ACO_PostingDate)
+                field(ACO_PostingDate; Rec.ACO_PostingDate)
                 {
                     Caption = 'Posting Date';
                     ApplicationArea = All;
                 }
                 //>>1.3.8.2018
-                field(ACO_DocumentDate; ACO_DocumentDate)
-                 {
-                     Caption = 'Document Date (Date)';
-                     ApplicationArea = All;
+                field(ACO_DocumentDate; Rec.ACO_DocumentDate)
+                {
+                    Caption = 'Document Date (Date)';
+                    ApplicationArea = All;
                 }
                 //<<1.3.8.2018
-                field(ACO_DocumentNo; ACO_DocumentNo)
+                field(ACO_DocumentNo; Rec.ACO_DocumentNo)
                 {
                     //>>1.3.6.2018
                     Caption = 'Document No. (InvRef)';
                     //<<1.3.6.2018
                     ApplicationArea = All;
                 }
-                field(ACO_CustomerNo; ACO_CustomerNo)
+                field(ACO_CustomerNo; Rec.ACO_CustomerNo)
                 {
                     //>>1.3.6.2018
                     Caption = 'Customer No. (AccountRef)';
                     //<<1.3.6.2018
                     ApplicationArea = All;
                 }
-                field(ACO_ExternalDocumentNo; ACO_ExternalDocumentNo)
+                field(ACO_ExternalDocumentNo; Rec.ACO_ExternalDocumentNo)
                 {
                     //>>1.3.6.2018
                     Caption = 'External Doc. No. (CustOrderNo)';
                     //<<1.3.6.2018
                     ApplicationArea = All;
                 }
-                field(ACO_ProductNo; ACO_ProductNo)
+                field(ACO_ProductNo; Rec.ACO_ProductNo)
                 {
                     //>>1.3.6.2018
                     Caption = 'Item No. (Product)';
                     //<<1.3.6.2018
                     ApplicationArea = All;
                 }
-                field(ACO_NormCode; ACO_NormCode)
+                field(ACO_NormCode; Rec.ACO_NormCode)
                 {
                     //>>1.3.6.2018
                     Caption = 'G/L Account No. (NomCode)';
                     //<<1.3.6.2018
                     ApplicationArea = All;
                 }
-                field(ACO_Quantity; ACO_Quantity)
+                field(ACO_Quantity; Rec.ACO_Quantity)
                 {
                     //>>1.3.6.2018
                     Caption = 'Quantity (Qty)';
                     //<<1.3.6.2018
                     ApplicationArea = All;
                 }
-                field(ACO_UnitPrice; ACO_UnitPrice)
+                field(ACO_UnitPrice; Rec.ACO_UnitPrice)
                 {
                     //>>1.3.6.2018
                     Caption = 'Unit Price (UnitPrice)';
                     //<<1.3.6.2018
                     ApplicationArea = All;
                 }
-                field(ACO_TaxCode; ACO_TaxCode)
+                field(ACO_TaxCode; Rec.ACO_TaxCode)
                 {
                     //>>1.3.6.2018
                     Caption = 'VAT Product Posting Gr. (TaxCode)';
                     //<<1.3.6.2018
                     ApplicationArea = All;
                 }
-                field(ACO_CurrencyCode; ACO_CurrencyCode)
+                field(ACO_CurrencyCode; Rec.ACO_CurrencyCode)
                 {
                     //>>1.3.6.2018
                     Caption = 'Currency Code (CurrCode)';
                     //<<1.3.6.2018
                     ApplicationArea = All;
                 }
-                field(ACO_ImportDate; ACO_ImportDate)
+                field(ACO_ImportDate; Rec.ACO_ImportDate)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_ImportTime; ACO_ImportTime)
+                field(ACO_ImportTime; Rec.ACO_ImportTime)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_Error; ACO_Error)
+                field(ACO_Error; Rec.ACO_Error)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_ErrorDescription; ACO_ErrorDescription)
+                field(ACO_ErrorDescription; Rec.ACO_ErrorDescription)
                 {
                     ApplicationArea = All;
                     Width = 200;
@@ -134,7 +135,7 @@ page 77200 "ACO_QuantumImportLog"
             }
         }
     }
-    
+
     actions
     {
         area(Processing)
@@ -147,24 +148,24 @@ page 77200 "ACO_QuantumImportLog"
                 Promoted = true;
                 PromotedIsBig = true;
                 PromotedCategory = Process;
-                
+
                 trigger OnAction()
                 var
                     SalesHeader: Record "Sales Header";
                     SalesInvList: page "Sales Invoice List";
                     SalesCreditList: page "Sales Credit Memos";
                 begin
-                    if ACO_ImportType = ACO_ImportType::Invoice then begin
+                    if Rec.ACO_ImportType = Rec.ACO_ImportType::Invoice then begin
                         SalesHeader.SetRange("Document Type", SalesHeader."Document Type"::Invoice);
-                        SalesHeader.SetRange(ACO_ImportNo, ACO_ImportNo);
+                        SalesHeader.SetRange(ACO_ImportNo, Rec.ACO_ImportNo);
 
                         SalesInvList.LookupMode(true);
                         SalesInvList.SetTableView(SalesHeader);
                         SalesInvList.Run();
                     end;
-                    if ACO_ImportType = ACO_ImportType::Credit then begin
+                    if Rec.ACO_ImportType = Rec.ACO_ImportType::Credit then begin
                         SalesHeader.SetRange("Document Type", SalesHeader."Document Type"::"Credit Memo");
-                        SalesHeader.SetRange(ACO_ImportNo, ACO_ImportNo);
+                        SalesHeader.SetRange(ACO_ImportNo, Rec.ACO_ImportNo);
 
                         SalesCreditList.LookupMode(true);
                         SalesCreditList.SetTableView(SalesHeader);
@@ -180,7 +181,7 @@ page 77200 "ACO_QuantumImportLog"
                 Promoted = true;
                 PromotedIsBig = true;
                 PromotedCategory = Process;
-                
+
                 trigger OnAction()
                 var
                     SalesInvHeader: Record "Sales Invoice Header";
@@ -188,17 +189,17 @@ page 77200 "ACO_QuantumImportLog"
                     SalesCMHeader: Record "Sales Cr.Memo Header";
                     PostedSalesCreditList: page "Posted Sales Credit Memos";
                 begin
-                    if ACO_ImportType = ACO_ImportType::Invoice then begin
+                    if Rec.ACO_ImportType = Rec.ACO_ImportType::Invoice then begin
                         SalesInvHeader.SetCurrentKey(ACO_ImportNo);
-                        SalesInvHeader.SetRange(ACO_ImportNo, ACO_ImportNo);
+                        SalesInvHeader.SetRange(ACO_ImportNo, Rec.ACO_ImportNo);
 
                         PostedSalesInvList.LookupMode(true);
                         PostedSalesInvList.SetTableView(SalesInvHeader);
                         PostedSalesInvList.Run();
                     end;
-                    if ACO_ImportType = ACO_ImportType::Credit then begin
+                    if Rec.ACO_ImportType = Rec.ACO_ImportType::Credit then begin
                         SalesCMHeader.SetCurrentKey(ACO_ImportNo);
-                        SalesCMHeader.SetRange(ACO_ImportNo, ACO_ImportNo);
+                        SalesCMHeader.SetRange(ACO_ImportNo, Rec.ACO_ImportNo);
 
                         PostedSalesCreditList.LookupMode(true);
                         PostedSalesCreditList.SetTableView(SalesCMHeader);

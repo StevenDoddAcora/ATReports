@@ -1,12 +1,12 @@
-codeunit 77600 "ACO_QuantumImportMtg"
+codeunit 50900 "ACO_QuantumImportMtg"
 {
     //#region "Documentation"
     // 1.1.0.2018 LBR 11/06/2019 - New object crated for Quantum to NAV functionality (Initial Spec point 3.2);
     // 1.3.3.2018 LBR 12/09/2019 - Change the Invoice/Credit Import to update currency even if is blank
     // 1.3.4.2018 LBR 13/09/2019 - CHG003321 (Import Log) Import Data Validation table for error log;
     // 1.3.5.2018 LBR 01/10/2019 - The import logic is no longer using items. Norm Code is GL code use for import purpose.
+    // MODERNIZED: TempBlob to Temp Blob for BC compatibility
     //#endregion "Documentation"
-
     //////////////////// INVOICE /////////////////////////////
     //#region QuantumInvoiceImportFunctions
     local procedure _____INVOICE_____();
@@ -20,10 +20,8 @@ codeunit 77600 "ACO_QuantumImportMtg"
         if GuiAllowed then begin
             gDialog.Open(gProgressBarLbl);
         end;
-
         // If manual import the parameter should be blank
         ImportQuantumInvoiceFile('');
-
         // Show summary message;
         IF GuiAllowed then begin
             gDialog.Close();
@@ -34,7 +32,7 @@ codeunit 77600 "ACO_QuantumImportMtg"
 
     procedure AutoImportQuantumInvoice();
     var
-        tempBlob: Record TempBlob temporary;
+        tempBlob: Codeunit "Temp Blob";
         outStr: OutStream;
         inStr: InStream;
         ImportFileName: Text;
@@ -45,17 +43,15 @@ codeunit 77600 "ACO_QuantumImportMtg"
         if GuiAllowed then begin
             gDialog.Open(gProgressBarLbl);
         end;
-
         GetAdditionalSetup();
         AdditionalSetup.TESTFIELD(ACO_InvoiceFileSource);
         AdditionalSetup.TESTFIELD(ACO_InvoiceFileProcessed);
-
         // Get all filse in the directory
         fileMgt.GetServerDirectoryFilesList(fileList, AdditionalSetup.ACO_InvoiceFileSource);
         if fileList.findset() then begin
             repeat
             begin
-                if(UpperCase(CopyStr(fileList.Name, StrLen(fileList.Name) - 2)) = 'CSV') then begin
+                if (UpperCase(CopyStr(fileList.Name, StrLen(fileList.Name) - 2)) = 'CSV') then begin
                     // Import File
                     ImportQuantumInvoiceFile(fileList.Name);
                     // Move File to Archive
@@ -69,7 +65,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
             end;
             until fileList.Next() = 0;
         end;
-
         // Show summary message;
         IF GuiAllowed then begin
             gDialog.Close();
@@ -80,7 +75,7 @@ codeunit 77600 "ACO_QuantumImportMtg"
 
     local procedure ImportQuantumInvoiceFile(pFile: text)
     var
-        tempBlob: Record TempBlob temporary;
+        tempBlob: Codeunit "Temp Blob";
         inStr: InStream;
         ImportFileName: Text;
         xmlInvoiceImport: XmlPort ACO_InvoiceImport;
@@ -88,11 +83,9 @@ codeunit 77600 "ACO_QuantumImportMtg"
         ImportNo: Integer;
     begin
         // IF the parameter have a value then it is auto-import otherwise run xml port in the normal way to ask for a file
-        if(pFile <> '') then begin
+        if (pFile <> '') then begin
             //Prepare File
-            tempBlob.Blob.Import(pFile);
-            tempBlob.Blob.CreateInStream(inStr);
-            //Import File
+            tempBlob.CreateInStream(inStr);
             xmlInvoiceImport.SetSource(inStr);
             xmlInvoiceImport.SetgFileName(pFile);
             xmlInvoiceImport.Import();
@@ -102,7 +95,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
         end;
         // Get Imported Buffer
         xmlInvoiceImport.GetImportLogNo(ImportNo);
-
         // Proceed with Buffer
         ProceedImportedQuantumInvoices(ImportNo);
     end;
@@ -121,10 +113,8 @@ codeunit 77600 "ACO_QuantumImportMtg"
         //
         // Review all lines and update error tick to not import invoices if any line have an validation error
         UpdateImportLogErrorInfo(lImportLog.ACO_ImportType::Invoice, ImportNo);
-
-        // Find lines without error and create Sales document 
-        with lImportLog do
-        begin
+        // Find lines without error and create Sales document
+        with lImportLog do begin
             SetCurrentKey(ACO_DocumentNo, ACO_CustomerNo, ACO_CurrencyCode, ACO_Error);
             SetRange(ACO_ImportType, lImportLog.ACO_ImportType::Invoice);
             SetRange(ACO_ImportNo, ImportNo);
@@ -133,7 +123,7 @@ codeunit 77600 "ACO_QuantumImportMtg"
                 repeat
                 begin
                     ClearLastError();
-                    if(lDocumentNo <> ACO_DocumentNo) OR(lCustomerNo <> ACO_CustomerNo) OR(lCurrencyCode <> ACO_CurrencyCode)
+                    if (lDocumentNo <> ACO_DocumentNo) OR (lCustomerNo <> ACO_CustomerNo) OR (lCurrencyCode <> ACO_CurrencyCode)
                     then begin
                         // This is needed for document creation
                         Commit();
@@ -149,7 +139,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
                             lSalesHeaderForPosting.Get(lSalesHeaderForPosting."Document Type"::Invoice, ACO_DocumentNo);
                             lSalesHeaderForPosting.Mark(True);
                         end;
-
                         // Update group values
                         lDocumentNo := ACO_DocumentNo;
                         lCustomerNo := ACO_CustomerNo;
@@ -159,16 +148,12 @@ codeunit 77600 "ACO_QuantumImportMtg"
                 until Next() = 0;
             end;
         end;
-
         // Review all lines and update error tick correctly per import after document creation
         UpdateImportLogErrorInfo(lImportLog.ACO_ImportType::Invoice, ImportNo);
-
         // Update Statistics:
         UpdateTotalNoOfDocInFile(lImportLog.ACO_ImportType::Invoice, ImportNo);
-
         // This is needed for posting
         Commit();
-
         // Post Document
         if AdditionalSetup.ACO_AutoPostInvoiceFile then begin
             lSalesHeaderForPosting.MarkedOnly(True);
@@ -186,13 +171,10 @@ codeunit 77600 "ACO_QuantumImportMtg"
                 until lSalesHeaderForPosting.next() = 0;
             end;
         end;
-
     end;
-
     //#endregion QuantumInvoiceImportFunctions
-
     //////////////////// CREDIT /////////////////////////////
-    //#region QuantumCreditImportFunctions   
+    //#region QuantumCreditImportFunctions
     local procedure _____CREDIT_____();
     begin
         // Dummy function for outline view purpose
@@ -204,10 +186,8 @@ codeunit 77600 "ACO_QuantumImportMtg"
         if GuiAllowed then begin
             gDialog.Open(gProgressBarLbl);
         end;
-
         // If manual import the parameter should be blank
         ImportQuantumCreditFile('');
-
         // Show summary message;
         IF GuiAllowed then begin
             gDialog.Close();
@@ -218,7 +198,7 @@ codeunit 77600 "ACO_QuantumImportMtg"
 
     procedure AutoImportQuantumCredit();
     var
-        tempBlob: Record TempBlob temporary;
+        tempBlob: Codeunit "Temp Blob";
         outStr: OutStream;
         inStr: InStream;
         ImportFileName: Text;
@@ -229,17 +209,15 @@ codeunit 77600 "ACO_QuantumImportMtg"
         if GuiAllowed then begin
             gDialog.Open(gProgressBarLbl);
         end;
-
         GetAdditionalSetup();
         AdditionalSetup.TESTFIELD(ACO_CreditFileSource);
         AdditionalSetup.TESTFIELD(ACO_CreditFileProcessed);
-
         // Get all filse in the directory
         fileMgt.GetServerDirectoryFilesList(fileList, AdditionalSetup.ACO_CreditFileSource);
         if fileList.findset() then begin
             repeat
             begin
-                if(UpperCase(CopyStr(fileList.Name, StrLen(fileList.Name) - 2)) = 'CSV') then begin
+                if (UpperCase(CopyStr(fileList.Name, StrLen(fileList.Name) - 2)) = 'CSV') then begin
                     // Import File
                     ImportQuantumCreditFile(fileList.Name);
                     // Move File to Archive
@@ -253,7 +231,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
             end;
             until fileList.Next() = 0;
         end;
-
         // Show summary message;
         IF GuiAllowed then begin
             gDialog.Close();
@@ -264,7 +241,7 @@ codeunit 77600 "ACO_QuantumImportMtg"
 
     local procedure ImportQuantumCreditFile(pFile: text)
     var
-        tempBlob: Record TempBlob temporary;
+        tempBlob: Codeunit "Temp Blob";
         inStr: InStream;
         ImportFileName: Text;
         xmlCreditImport: XmlPort ACO_CreditImport;
@@ -272,10 +249,9 @@ codeunit 77600 "ACO_QuantumImportMtg"
         ImportNo: Integer;
     begin
         // IF the parameter have a value then it is auto-import otherwise run xml port in the normal way to ask for a file
-        if(pFile <> '') then begin
+        if (pFile <> '') then begin
             //Prepare File
-            tempBlob.Blob.Import(pFile);
-            tempBlob.Blob.CreateInStream(inStr);
+            tempBlob.CreateInStream(inStr);
             //Import File
             xmlCreditImport.SetSource(inStr);
             xmlCreditImport.SetgFileName(pFile);
@@ -304,10 +280,8 @@ codeunit 77600 "ACO_QuantumImportMtg"
         //
         // Review all lines and update error tick to not import Credits if any line have an validation error
         UpdateImportLogErrorInfo(lImportLog.ACO_ImportType::Credit, ImportNo);
-
-        // Find lines without error and create Sales document 
-        with lImportLog do
-        begin
+        // Find lines without error and create Sales document
+        with lImportLog do begin
             SetCurrentKey(ACO_DocumentNo, ACO_CustomerNo, ACO_CurrencyCode, ACO_Error);
             SetRange(ACO_ImportType, lImportLog.ACO_ImportType::Credit);
             SetRange(ACO_ImportNo, ImportNo);
@@ -316,7 +290,7 @@ codeunit 77600 "ACO_QuantumImportMtg"
                 repeat
                 begin
                     ClearLastError();
-                    if(lDocumentNo <> ACO_DocumentNo) OR(lCustomerNo <> ACO_CustomerNo) OR(lCurrencyCode <> ACO_CurrencyCode)
+                    if (lDocumentNo <> ACO_DocumentNo) OR (lCustomerNo <> ACO_CustomerNo) OR (lCurrencyCode <> ACO_CurrencyCode)
                     then begin
                         // This is needed for document creation
                         Commit();
@@ -332,7 +306,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
                             lSalesHeaderForPosting.Get(lSalesHeaderForPosting."Document Type"::"Credit Memo", ACO_DocumentNo);
                             lSalesHeaderForPosting.Mark(True);
                         end;
-
                         // Update group values
                         lDocumentNo := ACO_DocumentNo;
                         lCustomerNo := ACO_CustomerNo;
@@ -342,16 +315,12 @@ codeunit 77600 "ACO_QuantumImportMtg"
                 until Next() = 0;
             end;
         end;
-
         // Review all lines and update error tick correctly per import after document creation
         UpdateImportLogErrorInfo(lImportLog.ACO_ImportType::Credit, ImportNo);
-
         // Update Statistics:
         UpdateTotalNoOfDocInFile(lImportLog.ACO_ImportType::Credit, ImportNo);
-
         // This is needed for posting
         Commit();
-
         // Post Document
         if AdditionalSetup.ACO_AutoPostCreditFile then begin
             lSalesHeaderForPosting.MarkedOnly(True);
@@ -369,10 +338,8 @@ codeunit 77600 "ACO_QuantumImportMtg"
                 until lSalesHeaderForPosting.next() = 0;
             end;
         end;
-
     end;
     //#endregion QuantumCreditImportFunctions
-
     //////////////////// EXPOSURE /////////////////////////////
     //#region QuantumExposureImportFunctions
     local procedure _____EXPOSURE_____();
@@ -388,7 +355,7 @@ codeunit 77600 "ACO_QuantumImportMtg"
 
     procedure AutoImportQuantumExposure();
     var
-        tempBlob: Record TempBlob temporary;
+        tempBlob: Codeunit "Temp Blob";
         outStr: OutStream;
         inStr: InStream;
         ImportFileName: Text;
@@ -399,16 +366,14 @@ codeunit 77600 "ACO_QuantumImportMtg"
         NoOfFilesImpLbl: Label 'Number of files imported: %1';
     begin
         GetAdditionalSetup();
-
         AdditionalSetup.TESTFIELD(ACO_ExposureFileSource);
         AdditionalSetup.TESTFIELD(ACO_ExposureFileProcessed);
-
         // Get all filse in the directory
         fileMgt.GetServerDirectoryFilesList(fileList, AdditionalSetup.ACO_ExposureFileSource);
         if fileList.findset() then begin
             repeat
             begin
-                if(UpperCase(CopyStr(fileList.Name, StrLen(fileList.Name) - 2)) = 'CSV') then begin
+                if (UpperCase(CopyStr(fileList.Name, StrLen(fileList.Name) - 2)) = 'CSV') then begin
                     // Import File
                     ImportQuantumExposureFile(fileList.Name);
                     // Move File to Archive
@@ -423,23 +388,21 @@ codeunit 77600 "ACO_QuantumImportMtg"
             end;
             until fileList.Next() = 0;
         end;
-
         if GuiAllowed then
             Message(NoOfFilesImpLbl, counter);
     end;
 
     local procedure ImportQuantumExposureFile(pFile: text)
     var
-        tempBlob: Record TempBlob temporary;
+        tempBlob: Codeunit "Temp Blob";
         inStr: InStream;
         ImportFileName: Text;
         xmlExposureImport: XmlPort ACO_ExposureImport;
     begin
         // IF the parameter have a value then it is auto-import otherwise run xml port in the normal way to ask for a file
-        if(pFile <> '') then begin
+        if (pFile <> '') then begin
             //Prepare File
-            tempBlob.Blob.Import(pFile);
-            tempBlob.Blob.CreateInStream(inStr);
+            tempBlob.CreateInStream(inStr);
             //Import File
             xmlExposureImport.SetSource(inStr);
             xmlExposureImport.Import();
@@ -449,7 +412,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
         end;
     end;
     //#endregion QuantumExposureImportFunctions
-
     //////////////////// HELPER /////////////////////////////
     //#region HelpFunctions
     local procedure _____HELPER_____();
@@ -471,18 +433,16 @@ codeunit 77600 "ACO_QuantumImportMtg"
         lDocumentNo: code[20];
         lCurrencyCode: code[20];
     begin
-        with lImportLog do
-        begin
+        with lImportLog do begin
             SetCurrentKey(ACO_DocumentNo, ACO_CustomerNo, ACO_CurrencyCode, ACO_Error);
             SetRange(ACO_ImportType, ImportType);
             SetRange(ACO_ImportNo, ImportNo);
             if findset(false) then begin
                 repeat
                 begin
-                    if(lDocumentNo <> ACO_DocumentNo) OR(lCustomerNo <> ACO_CustomerNo) OR(lCurrencyCode <> ACO_CurrencyCode)
+                    if (lDocumentNo <> ACO_DocumentNo) OR (lCustomerNo <> ACO_CustomerNo) OR (lCurrencyCode <> ACO_CurrencyCode)
                     then begin
                         gNoOfDocToImport += 1;
-
                         // Update group values
                         lDocumentNo := ACO_DocumentNo;
                         lCustomerNo := ACO_CustomerNo;
@@ -500,8 +460,7 @@ codeunit 77600 "ACO_QuantumImportMtg"
         lImportLogTMP: Record ACO_ImportLog temporary;
     begin
         // Find all entries with error
-        with lImportLog do
-        begin
+        with lImportLog do begin
             SetCurrentKey(ACO_DocumentNo, ACO_CustomerNo, ACO_CurrencyCode, ACO_Error);
             SetRange(ACO_ImportType, ImportType);
             SetRange(ACO_ImportNo, ImportNo);
@@ -515,10 +474,8 @@ codeunit 77600 "ACO_QuantumImportMtg"
                 until Next() = 0;
             end;
         end;
-
         // Update outstanding records to adjust with error
-        with lImportLogTMP do
-        begin
+        with lImportLogTMP do begin
             Reset();
             if findset(false) then begin
                 repeat
@@ -548,9 +505,8 @@ codeunit 77600 "ACO_QuantumImportMtg"
     begin
         // Find correct Customer code
         ReturnValue := '';
-        if(STRLEN(Column_CustomerNo) > 20) then
+        if (STRLEN(Column_CustomerNo) > 20) then
             Column_CustomerNo := CopyStr(Column_CustomerNo, 1, 20);
-
         if Customer.get(Column_CustomerNo) then
             ReturnValue := Customer."No."
         else begin
@@ -566,7 +522,7 @@ codeunit 77600 "ACO_QuantumImportMtg"
     begin
         // Find correct currency code
         ReturnValue := '';
-        if(STRLEN(Column_CurrencyCode) > 2) then begin
+        if (STRLEN(Column_CurrencyCode) > 2) then begin
             ReturnValue := CopyStr(Column_CurrencyCode, 1, 3);
             IF NOT Currency.GET(ReturnValue) THEN begin
                 Currency.RESET();
@@ -589,7 +545,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
             ReturnValue := 0;
             exit;
         end;
-
         if not Evaluate(ReturnValue, Column_Value) then
             ErrorTxt := StrSubstNo(ErrorLbl, Column_Value);
     end;
@@ -625,7 +580,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
         if not Evaluate(ReturnValue, Column_Value) then
             ErrorTxt := StrSubstNo(ErrorLbl, Column_Value);
     end;
-
     //>>1.3.5.2018
     // procedure GetProductCode(Column_ItemNo: Text; var ReturnValue: Code[20]) ErrorTxt: Text;
     // var
@@ -636,7 +590,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
     //     ReturnValue := '';
     //     if(STRLEN(Column_ItemNo) > 20) then
     //         Column_ItemNo := CopyStr(Column_ItemNo, 1, 20);
-
     //     if Item.get(Column_ItemNo) then
     //         ReturnValue := Item."No."
     //     else begin
@@ -644,7 +597,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
     //         ErrorTxt := StrSubstNo(ErrorLbl, Column_ItemNo);
     //     end;
     // END;
-
     procedure GetGLAccountCode(Column_NormCode: Text; var ReturnValue: Code[20]) ErrorTxt: Text;
     var
         GLAccount: Record "G/L Account";
@@ -652,9 +604,8 @@ codeunit 77600 "ACO_QuantumImportMtg"
     begin
         // Find correct Customer code
         ReturnValue := '';
-        if(STRLEN(Column_NormCode) > 20) then
+        if (STRLEN(Column_NormCode) > 20) then
             Column_NormCode := CopyStr(Column_NormCode, 1, 20);
-
         if GLAccount.get(Column_NormCode) then
             ReturnValue := GLAccount."No."
         else begin
@@ -663,7 +614,6 @@ codeunit 77600 "ACO_QuantumImportMtg"
         end;
     END;
     //<<1.3.5.2018
-
     procedure UpdateInvoiceUnitPrice(CustomerNo: Code[20]; var UnitPrice: Decimal) ErrorTxt: Text;
     var
         AdditionalSetup: record ACO_AdditionalSetup;
@@ -671,12 +621,10 @@ codeunit 77600 "ACO_QuantumImportMtg"
     begin
         if UnitPrice = 0 then
             exit;
-
         if not AdditionalSetup.get() then
             AdditionalSetup.init();
-
         // If value is near to 0 then it should be special case
-        if(UnitPrice > (-1 * AdditionalSetup.ACO_UnitPriceRoundToZeroTol)) and (UnitPrice < AdditionalSetup.ACO_UnitPriceRoundToZeroTol)
+        if (UnitPrice > (-1 * AdditionalSetup.ACO_UnitPriceRoundToZeroTol)) and (UnitPrice < AdditionalSetup.ACO_UnitPriceRoundToZeroTol)
         then begin
             // Customer must exist
             Customer.Get(CustomerNo);
@@ -692,24 +640,19 @@ codeunit 77600 "ACO_QuantumImportMtg"
     begin
         if ProductCode = '' then
             exit;
-
-        if(UnitPrice = 0) then begin
+        if (UnitPrice = 0) then begin
             // Customer must exist
             Customer.Get(CustomerNo);
-
             // Get correct product code
             ProductCode := Customer.ACO_ZeroLineItemNo;
-
             // At that stage this fields needs to have value
             AdditionalSetup.TestField(ACO_DefaultZeroLineItemNo);
-
             if ProductCode = '' then begin
                 ProductCode := AdditionalSetup.ACO_DefaultZeroLineItemNo;
             end;
         end;
     end;
     //#endregion HelpFunctions
-
     var
         AdditionalSetup: Record ACO_AdditionalSetup;
         GeneralFunctions: Codeunit ACO_GeneralFunctions;

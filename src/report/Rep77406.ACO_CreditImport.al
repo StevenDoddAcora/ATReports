@@ -1,4 +1,4 @@
-report 77406 "ACO_CreditImport"
+report 50918 "ACO_CreditImport"
 {
     Caption = 'Credit Import';
     ProcessingOnly = true;

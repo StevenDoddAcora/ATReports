@@ -1,4 +1,4 @@
-xmlport 77501 "ACO_InvoiceImport"
+xmlport 50927 "ACO_InvoiceImport"
 {
     //#region "Documentation"
     // 1.1.0.2018 LBR 11/06/2019 - New object crated for Quantum to NAV functionality (Initial Spec point 3.2);

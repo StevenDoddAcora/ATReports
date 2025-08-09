@@ -1,4 +1,4 @@
-page 77203 "ACO_CustomerAgingDetails"
+page 50907 "ACO_CustomerAgingDetails"
 {
     //#region Documentation
     // 1.3.7.2018 LBR 16/10/2019 - CHG003339 (Customer Average Collection Period) - new page for calculation puprose added;
@@ -22,114 +22,114 @@ page 77203 "ACO_CustomerAgingDetails"
         {
             repeater(Group)
             {
-                field(ACO_Type; ACO_Type)
+                field(ACO_Type; Rec.ACO_Type)
                 {
                     ApplicationArea = All;
                     Visible = false;
                 }
-                field(ACO_RunAtDate; ACO_RunAtDate)
+                field(ACO_RunAtDate; Rec.ACO_RunAtDate)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_No; ACO_No)
+                field(ACO_No; Rec.ACO_No)
                 {
                     Caption = 'Customer No.';
                     ApplicationArea = All;
                 }
                 //>>1.4.6.2018
-                field(ACO_Name; ACO_Name)
+                field(ACO_Name; Rec.ACO_Name)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_LastPaidDate; ACO_LastPaidDate)
+                field(ACO_LastPaidDate; Rec.ACO_LastPaidDate)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_NoOfDisputedInv; ACO_NoOfDisputedInv)
+                field(ACO_NoOfDisputedInv; Rec.ACO_NoOfDisputedInv)
                 {
                     ApplicationArea = All;
                 }
                 //<<1.4.6.2018
 
                 // LCY
-                field(ACO_CurrentBalanceLCY; ACO_CurrentBalanceLCY)
+                field(ACO_CurrentBalanceLCY; Rec.ACO_CurrentBalanceLCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod1LCY; ACO_AgedValuePeriod1LCY)
+                field(ACO_AgedValuePeriod1LCY; Rec.ACO_AgedValuePeriod1LCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod2LCY; ACO_AgedValuePeriod2LCY)
+                field(ACO_AgedValuePeriod2LCY; Rec.ACO_AgedValuePeriod2LCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod3LCY; ACO_AgedValuePeriod3LCY)
+                field(ACO_AgedValuePeriod3LCY; Rec.ACO_AgedValuePeriod3LCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod4LCY; ACO_AgedValuePeriod4LCY)
+                field(ACO_AgedValuePeriod4LCY; Rec.ACO_AgedValuePeriod4LCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod5LCY; ACO_AgedValuePeriod5LCY)
+                field(ACO_AgedValuePeriod5LCY; Rec.ACO_AgedValuePeriod5LCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_TotalInvValueOverdueLCY; ACO_TotalInvValueOverdueLCY)
+                field(ACO_TotalInvValueOverdueLCY; Rec.ACO_TotalInvValueOverdueLCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_TotalAmountDueLCY; ACO_TotalAmountDueLCY)
+                field(ACO_TotalAmountDueLCY; Rec.ACO_TotalAmountDueLCY)
                 {
                     ApplicationArea = All;
                 }
                 //>>1.4.6.2018
-                field(ACO_CreditLimitLCY; ACO_CreditLimitLCY)
+                field(ACO_CreditLimitLCY; Rec.ACO_CreditLimitLCY)
                 {
                     ApplicationArea = All;
                     Visible = false;
                 }
                 //<<1.4.6.2018
                 // TCY
-                field(ACO_CurrencyCodeTCY; ACO_CurrencyCodeTCY)
+                field(ACO_CurrencyCodeTCY; Rec.ACO_CurrencyCodeTCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_CurrentBalanceTCY; ACO_CurrentBalanceTCY)
+                field(ACO_CurrentBalanceTCY; Rec.ACO_CurrentBalanceTCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod1TCY; ACO_AgedValuePeriod1TCY)
+                field(ACO_AgedValuePeriod1TCY; Rec.ACO_AgedValuePeriod1TCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod2TCY; ACO_AgedValuePeriod2TCY)
+                field(ACO_AgedValuePeriod2TCY; Rec.ACO_AgedValuePeriod2TCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod3TCY; ACO_AgedValuePeriod3TCY)
+                field(ACO_AgedValuePeriod3TCY; Rec.ACO_AgedValuePeriod3TCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod4TCY; ACO_AgedValuePeriod4TCY)
+                field(ACO_AgedValuePeriod4TCY; Rec.ACO_AgedValuePeriod4TCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_AgedValuePeriod5TCY; ACO_AgedValuePeriod5TCY)
+                field(ACO_AgedValuePeriod5TCY; Rec.ACO_AgedValuePeriod5TCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_TotalInvValueOverdueTCY; ACO_TotalInvValueOverdueTCY)
+                field(ACO_TotalInvValueOverdueTCY; Rec.ACO_TotalInvValueOverdueTCY)
                 {
                     ApplicationArea = All;
                 }
-                field(ACO_TotalAmountDueTCY; ACO_TotalAmountDueTCY)
+                field(ACO_TotalAmountDueTCY; Rec.ACO_TotalAmountDueTCY)
                 {
                     ApplicationArea = All;
                 }
                 //>>1.4.6.2018
-                field(ACO_CreditLimitTCY; ACO_CreditLimitTCY)
+                field(ACO_CreditLimitTCY; Rec.ACO_CreditLimitTCY)
                 {
                     ApplicationArea = All;
                 }
@@ -165,6 +165,6 @@ page 77203 "ACO_CustomerAgingDetails"
 
     trigger OnOpenPage();
     begin
-        SETRANGE(ACO_Type, Aco_Type::Customer);
+        Rec.SETRANGE(ACO_Type, Rec.Aco_Type::Customer);
     end;
 }

@@ -1,4 +1,4 @@
-codeunit 77604 "ACO_PmtExpMgtGJL"
+codeunit 50904 "ACO_PmtExpMgtGJL"
 {
     //#region "Documentation"
     // 1.4.2.2018 KNH 14/11/2019 - CHG003382 (Change curr code on BACS payments where bank acc curr code
@@ -109,7 +109,7 @@ codeunit 77604 "ACO_PmtExpMgtGJL"
         END;
         //<<1.4.6.2018
 
-        IF(PaymentExportData."Currency Code" <> GenJournalLine."Currency Code") And(GenJournalLine."Currency Code" <> '') then
+        IF (PaymentExportData."Currency Code" <> GenJournalLine."Currency Code") And (GenJournalLine."Currency Code" <> '') then
             PaymentExportData."Currency Code" := GenJournalLine."Currency Code";
     end;
 }

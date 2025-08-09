@@ -1,4 +1,4 @@
-xmlport 77502 "ACO_CreditImport"
+xmlport 50928 "ACO_CreditImport"
 {
     //#region "Documentation"
     // 1.1.0.2018 LBR 11/06/2019 - New object crated for Quantum to NAV functionality (Initial Spec point 3.2);

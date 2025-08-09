@@ -1,4 +1,4 @@
-pageextension 77300 "ACO_AddtionalSetup_Ext002" extends ACO_AdditionalSetup
+pageextension 50967 "ACO_AddtionalSetup_Ext002" extends ACO_AdditionalSetup
 {
     //#region Documentation
     //1.1.0.2018 LBR 11/06/2019 - New object crated for Quantum to NAV functionality (Initial Spec point 3.2);
@@ -11,7 +11,7 @@ pageextension 77300 "ACO_AddtionalSetup_Ext002" extends ACO_AdditionalSetup
     {
         addbefore(ACO_AvgCollectionPeriodCalc)
         {
-            field(ACO_XMLPortTextEnconding; ACO_XMLPortTextEnconding)
+            field(ACO_XMLPortTextEnconding; Rec.ACO_XMLPortTextEnconding)
             {
                 ApplicationArea = All;
                 ToolTip = 'It indicates which Text Enconding should be used when Exporting/Importing XMLPorts';
@@ -33,13 +33,13 @@ pageextension 77300 "ACO_AddtionalSetup_Ext002" extends ACO_AdditionalSetup
                     Caption = 'Prevent Line Compression';
                     Visible = true;
 
-                    field(ACO_PreventPurchLineCompression; ACO_PreventPurchLineCompression)
+                    field(ACO_PreventPurchLineCompression; Rec.ACO_PreventPurchLineCompression)
                     {
                         Caption = 'Enable';
                         ApplicationArea = All;
                         ToolTip = 'It determines if the sytem should prevent purchase line compression during posting purchase documents';
                     }
-                    field(ACO_PreventPurchLineCompDimCode; ACO_PreventPurchLineCompDimCode)
+                    field(ACO_PreventPurchLineCompDimCode; Rec.ACO_PreventPurchLineCompDimCode)
                     {
                         Caption = 'Dimension Code';
                         ApplicationArea = All;
@@ -58,13 +58,13 @@ pageextension 77300 "ACO_AddtionalSetup_Ext002" extends ACO_AdditionalSetup
                     Caption = 'Prevent Line Compression';
                     Visible = true;
 
-                    field(ACO_PreventSalesLineCompression; ACO_PreventSalesLineCompression)
+                    field(ACO_PreventSalesLineCompression; Rec.ACO_PreventSalesLineCompression)
                     {
                         Caption = 'Enable';
                         ApplicationArea = All;
                         ToolTip = 'It determines if the sytem should prevent Sales line compression during posting Sales documents';
                     }
-                    field(ACO_PreventSalesLineCompDimCode; ACO_PreventSalesLineCompDimCode)
+                    field(ACO_PreventSalesLineCompDimCode; Rec.ACO_PreventSalesLineCompDimCode)
                     {
                         Caption = 'Dimension Code';
                         ApplicationArea = All;

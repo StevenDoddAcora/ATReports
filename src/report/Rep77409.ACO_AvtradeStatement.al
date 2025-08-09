@@ -1,4 +1,4 @@
-report 77409 "ACO_AvtradeStatement"
+report 50921 "ACO_AvtradeStatement"
 {
     //#region "Documentation"
     // 1.3.2.2018 LBR 23/08/2019 - new object (Reports added for Statement, Remittance and Purch Order)
@@ -16,7 +16,7 @@ report 77409 "ACO_AvtradeStatement"
     //#endregion "Documentation"
 
     DefaultLayout = RDLC;
-    RDLCLayout = './src/report/layouts/Rep77409.AvtradeStatement.rdlc';
+    RDLCLayout = './src/report/layouts/Rep50921.AvtradeStatement.rdlc';
     Caption = 'Statement';
     PreviewMode = PrintLayout;
 
@@ -893,7 +893,7 @@ report 77409 "ACO_AvtradeStatement"
                         end;
                     end;
                     //<<3.0.7.2018
-                    
+
                     // Deal with other currencies
                     lCurrency.RESET();
                     IF lCurrency.FINDSET(FALSE) THEN BEGIN

@@ -1,4 +1,4 @@
-codeunit 77602 "ACO_QuantumImportProceed"
+codeunit 50902 "ACO_QuantumImportProceed"
 {
     //#region "Documentation"
     // 1.3.4.2018 LBR 13/09/2019 - CHG003321 (Import Log) Import Data Validation table for error log;
@@ -8,24 +8,19 @@ codeunit 77602 "ACO_QuantumImportProceed"
     // 1.3.9.2018 LBR 29/10/2019 - Snagging (corrected issue for document date import)
     // 3.0.0.2018 LBR 19/12/2019 - Adjust posting date based on special Avtrade rules
     //#endregion "Documentation"
-
     TableNo = ACO_ImportLog;
-
     trigger OnRun();
     begin
         // Copy Record
         gImportLog.COPY(Rec);
-
         // Get Settings
         GetAdditionalSetup();
-
         // Invoice
         if gImportLog.ACO_ImportType = gImportLog.ACO_ImportType::Invoice then begin
             gAdditionalSetup.TestField(ACO_ImportedInvoicePostedSeriesNo);
             ProceedImportedQuantumInvoiceCredit();
             exit;
         end;
-
         // Credit
         if gImportLog.ACO_ImportType = gImportLog.ACO_ImportType::Credit then begin
             gAdditionalSetup.TestField(ACO_ImportedCreditPostedSeriesNo);
@@ -44,65 +39,55 @@ codeunit 77602 "ACO_QuantumImportProceed"
         lSalesPost: Codeunit "Sales-Post";
     begin
         // Create Documents
-        with lImportLog do
-        begin
+        with lImportLog do begin
             // Group by Document no and Customer No
             SetCurrentKey(ACO_DocumentNo, ACO_CustomerNo, ACO_CurrencyCode, ACO_Error);
             Setrange(ACO_ImportNo, gImportLog.ACO_ImportNo);
             Setrange(ACO_DocumentNo, gImportLog.ACO_DocumentNo);
             Setrange(ACO_CustomerNo, gImportLog.ACO_CustomerNo);
             Setrange(ACO_CurrencyCode, gImportLog.ACO_CurrencyCode);
-
             if FindSet(false) then begin
                 lLineNo := 0;
                 // Create Header
                 lSalesHeader.init();
                 lSalesHeader.SetHideValidationDialog(true);
-
                 if ACO_ImportType = ACO_ImportType::Invoice then
                     lSalesHeader."Document Type" := lSalesHeader."Document Type"::Invoice;
                 if ACO_ImportType = ACO_ImportType::Credit then
                     lSalesHeader."Document Type" := lSalesHeader."Document Type"::"Credit Memo";
-
                 lSalesHeader."No." := ACO_DocumentNo;
-
                 if ACO_ImportType = ACO_ImportType::Invoice then
                     lSalesHeader."No. Series" := gAdditionalSetup.ACO_ImportedInvoicePostedSeriesNo;
                 if ACO_ImportType = ACO_ImportType::Credit then
                     lSalesHeader."No. Series" := gAdditionalSetup.ACO_ImportedCreditPostedSeriesNo;
-
                 //>>1.3.9.2018
                 //lSalesHeader.VALIDATE("Document Date", ACO_PostingDate);
                 //<<1.3.9.2018
                 //>>3.0.0.2018
                 //lSalesHeader.VALIDATE("Posting Date", ACO_PostingDate);
-                //Adjust posting date based on special Avtrade rules                
+                //Adjust posting date based on special Avtrade rules
                 lSalesHeader.VALIDATE("Posting Date", GetAdjustedPostingDate(ACO_PostingDate, ACO_DocumentDate));
                 //<<3.0.0.2018
                 lSalesHeader.Insert(TRUE);
-
                 lSalesHeader.Validate("Sell-to Customer No.", ACO_CustomerNo);
                 //>>1.3.9.2018
                 lSalesHeader.VALIDATE("Posting Date");
                 lSalesHeader.VALIDATE("Document Date", ACO_DocumentDate);
                 //<<1.3.9.2018
                 lSalesHeader.Validate("External Document No.", ACO_ExternalDocumentNo);
-
                 if ACO_ImportType = ACO_ImportType::Invoice then
                     lSalesHeader."Posting No. Series" := gAdditionalSetup.ACO_ImportedInvoicePostedSeriesNo;
                 if ACO_ImportType = ACO_ImportType::Credit then
-                    lSalesHeader."Posting No. Series" := gAdditionalSetup.ACO_ImportedCreditPostedSeriesNo; ;
-
+                    lSalesHeader."Posting No. Series" := gAdditionalSetup.ACO_ImportedCreditPostedSeriesNo;
+                ;
                 // Currency code is formated during import
                 lSalesHeader.Validate("Currency Code", ACO_CurrencyCode);
                 lSalesHeader.ACO_ImportNo := ACO_ImportNo;
                 lSalesHeader.modify();
-
                 // Lines
                 repeat
                 begin
                     lLineNo += 10000;
-
                     lSalesLine.init();
                     lSalesLine.SetHideValidationDialog(true);
                     lSalesLine.Validate("Document Type", lSalesHeader."Document Type");
@@ -114,7 +99,7 @@ codeunit 77602 "ACO_QuantumImportProceed"
                     //lSalesLine.Validate(Type, lSalesLine.Type::Item);
                     //lSalesLine.Validate("No.", ACO_ProductNo);
                     // Deal with 0 item line
-                    if(ACO_ProductNo <> '') then begin
+                    if (ACO_ProductNo <> '') then begin
                         lSalesLine.Validate(Type, lSalesLine.Type::Item);
                         lSalesLine.Validate("No.", ACO_ProductNo);
                     end else begin
@@ -123,7 +108,7 @@ codeunit 77602 "ACO_QuantumImportProceed"
                         lSalesLine.Validate("No.", ACO_NormCode);
                     end;
                     //<<1.3.5.2018
-                    if(ACO_Quantity = 0) THEN
+                    if (ACO_Quantity = 0) THEN
                         ACO_Quantity := 1;
                     lSalesLine.Validate(Quantity, ACO_Quantity);
                     lSalesLine.Validate("Unit Price", ACO_UnitPrice);
@@ -138,15 +123,12 @@ codeunit 77602 "ACO_QuantumImportProceed"
                 until next() = 0;
             end;
         end;
-
         // Release Sales Document for posting
         clear(lReleaseSalesDocument);
         lReleaseSalesDocument.SetSkipCheckReleaseRestrictions();
         lReleaseSalesDocument.PerformManualRelease(lSalesHeader);
     end;
-
     //#region HelpFunctions
-
     //>>3.0.0.2018
     local procedure GetAdjustedPostingDate(pPostingDate: date; pDocumentDate: Date): Date;
     var
@@ -170,23 +152,18 @@ codeunit 77602 "ACO_QuantumImportProceed"
         lCurrMonthFirstWeekStartDate := CALCDATE('-CM', pPostingDate);
         //7th of curr month
         lCurrMonthFirstWeekEndDate := CALCDATE('-CM+6D', pPostingDate);
-
         //If Posting date month = Document date month: then no change
         if lMonthPD = lMonthDD then
             exit(pPostingDate);
-
         //If Posting date is after first 7 days: then no change
         if pPostingDate > lCurrMonthFirstWeekEndDate then
             exit(pPostingDate);
-
         //If Document date is in previous month and Posting date is in the first 7 days of the current month: then return last day of prev month
-        if(pDocumentDate >= lPrevMonthStartDate) and(pPostingDate <= lCurrMonthFirstWeekEndDate) then
+        if (pDocumentDate >= lPrevMonthStartDate) and (pPostingDate <= lCurrMonthFirstWeekEndDate) then
             exit(lPrevMonthEndDate);
-
-        //If Document date is eriler than previous month and Posting date is between first day of prev month and end day of the first week in curr month: then return last day of prev month 
-        if(pDocumentDate < lPrevMonthStartDate) and(pPostingDate >= lPrevMonthStartDate) and(pPostingDate <= lCurrMonthFirstWeekEndDate) then
+        //If Document date is eriler than previous month and Posting date is between first day of prev month and end day of the first week in curr month: then return last day of prev month
+        if (pDocumentDate < lPrevMonthStartDate) and (pPostingDate >= lPrevMonthStartDate) and (pPostingDate <= lCurrMonthFirstWeekEndDate) then
             exit(lPrevMonthEndDate);
-
         //Any ohter case return default:
         exit(pPostingDate);
     end;
@@ -197,10 +174,8 @@ codeunit 77602 "ACO_QuantumImportProceed"
             gAdditionalSetup.init();
     end;
     //#endregion HelpFunctions
-
     var
         gAdditionalSetup: Record ACO_AdditionalSetup;
         gGeneralFunctions: Codeunit ACO_GeneralFunctions;
         gImportLog: record ACO_ImportLog;
-
 }

@@ -1,4 +1,4 @@
-pageextension 77301 "ACO_PaymentJournal_Ext002" extends "Payment Journal"
+pageextension 50966 "ACO_PaymentJournal_Ext002" extends "Payment Journal"
 {
     //#region "Documentation"
     // 1.3.2.2018 LBR 23/08/2019 - new action to print Remittance report
@@ -43,7 +43,7 @@ pageextension 77301 "ACO_PaymentJournal_Ext002" extends "Payment Journal"
                 var
                     GenJnlLine: Record "Gen. Journal Line";
                 begin
-                    CheckIfPrivacyBlocked;
+                    Rec.CheckIfPrivacyBlocked;
                     GenJnlLine.COPYFILTERS(Rec);
                     GenJnlLine.SetRange(ACO_ManualPaymentExp, false);
                     IF GenJnlLine.FINDFIRST THEN
@@ -71,8 +71,8 @@ pageextension 77301 "ACO_PaymentJournal_Ext002" extends "Payment Journal"
                     GenJnlLine: Record "Gen. Journal Line";
                 begin
                     GenJnlLine.RESET;
-                    GenJnlLine.SETRANGE("Journal Template Name", "Journal Template Name");
-                    GenJnlLine.SETRANGE("Journal Batch Name", "Journal Batch Name");
+                    GenJnlLine.SETRANGE("Journal Template Name", Rec."Journal Template Name");
+                    GenJnlLine.SETRANGE("Journal Batch Name", Rec."Journal Batch Name");
                     REPORT.RUN(REPORT::"ACO_AVTRemittanceAdviceJnl", TRUE, FALSE, GenJnlLine);
                 end;
             }
@@ -94,8 +94,8 @@ pageextension 77301 "ACO_PaymentJournal_Ext002" extends "Payment Journal"
                     GenJnlLine: Record "Gen. Journal Line";
                 begin
                     GenJnlLine.RESET;
-                    GenJnlLine.SETRANGE("Journal Template Name", "Journal Template Name");
-                    GenJnlLine.SETRANGE("Journal Batch Name", "Journal Batch Name");
+                    GenJnlLine.SETRANGE("Journal Template Name", Rec."Journal Template Name");
+                    GenJnlLine.SETRANGE("Journal Batch Name", Rec."Journal Batch Name");
 
                     IntegrationMgt.EmailRemittanceJnl(GenJnlLine);
                 end;

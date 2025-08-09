@@ -1,4 +1,4 @@
-tableextension 77100 "ACO_AdditionalSetup_Ext002" extends ACO_AdditionalSetup //MyTargetTableId
+tableextension 50909 "ACO_AdditionalSetup_Ext002" extends ACO_AdditionalSetup //MyTargetTableId
 {
 
     //#region "Documentation"
@@ -10,17 +10,17 @@ tableextension 77100 "ACO_AdditionalSetup_Ext002" extends ACO_AdditionalSetup //
 
     fields
     {
-        field(77000; ACO_XMLPortTextEnconding; Option)
+        field(50950; ACO_XMLPortTextEnconding; Option)
         {
             Caption = 'XMLPort Text Encoding';
             DataClassification = CustomerContent;
-            OptionMembers = "MS-Dos", "UTF-8", "UTF-16", "Windows";
+            OptionMembers = "MS-Dos","UTF-8","UTF-16","Windows";
             OptionCaption = 'MS-Dos,UTF-8,UTF-16,Windows';
             Description = 'It indicates which Text Enconding should be used when Exporting/Importing XMLPorts';
         }
 
         ///<summary>3.1.4.2018 - MAR 16/03/2020 - CHG003421 - Field to prevent Purchase Line compression</summary>
-        field(77001; ACO_PreventPurchLineCompression; Boolean)
+        field(50951; ACO_PreventPurchLineCompression; Boolean)
         {
             Caption = 'Prevent Purchase Line Compression';
             DataClassification = CustomerContent;
@@ -29,7 +29,7 @@ tableextension 77100 "ACO_AdditionalSetup_Ext002" extends ACO_AdditionalSetup //
         }
 
         ///<summary>3.1.4.2018 - MAR 16/03/2020 - CHG003421 - Field to prevent Purchase Line compression</summary>
-        field(77002; ACO_PreventPurchLineCompDimCode; Code[20])
+        field(50952; ACO_PreventPurchLineCompDimCode; Code[20])
         {
             Caption = 'Prevent Purchase Line Compression Dimension';
             DataClassification = CustomerContent;
@@ -38,7 +38,7 @@ tableextension 77100 "ACO_AdditionalSetup_Ext002" extends ACO_AdditionalSetup //
             Editable = true;
         }
         ///<summary>3.1.4.2018 - MAR 16/03/2020 - CHG003421 - Field to prevent Sales Line compression</summary>
-        field(77003; ACO_PreventSalesLineCompression; Boolean)
+        field(50953; ACO_PreventSalesLineCompression; Boolean)
         {
             Caption = 'Prevent Sales Line Compression';
             DataClassification = CustomerContent;
@@ -47,7 +47,7 @@ tableextension 77100 "ACO_AdditionalSetup_Ext002" extends ACO_AdditionalSetup //
         }
 
         ///<summary>3.1.4.2018 - MAR 16/03/2020 - CHG003421 - Field to prevent Sales Line compression</summary>
-        field(77004; ACO_PreventSalesLineCompDimCode; Code[20])
+        field(50954; ACO_PreventSalesLineCompDimCode; Code[20])
         {
             Caption = 'Prevent Sales Line Compression Dimension';
             DataClassification = CustomerContent;

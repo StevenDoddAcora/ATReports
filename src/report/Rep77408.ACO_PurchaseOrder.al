@@ -496,8 +496,8 @@ report 50920 "ACO_PurchaseOrder"
                             then
                                 PurchLine."Line Amount" := 0;
 
-                            if ("Purchase Line"."Cross-Reference No." <> '') and (not ShowInternalInfo) then
-                                "Purchase Line"."No." := "Purchase Line"."Cross-Reference No.";
+                            if ("Purchase Line"."Item Reference No." <> '') and (not ShowInternalInfo) then
+                                "Purchase Line"."No." := "Purchase Line"."Item Reference No.";
                             if (PurchLine.Type = PurchLine.Type::"G/L Account") and (not ShowInternalInfo) then
                                 "Purchase Line"."No." := '';
                             AllowInvDisctxt := FORMAT("Purchase Line"."Allow Invoice Disc.");
@@ -910,7 +910,7 @@ report 50920 "ACO_PurchaseOrder"
                     PurchPostPrepmt.CalcVATAmountLines("Purchase Header", PrepmtPurchLine, PrepmtVATAmountLine, 0);
                     PrepmtVATAmountLine.DeductVATAmountLine(PrePmtVATAmountLineDeduct);
                     PurchPostPrepmt.UpdateVATOnLines("Purchase Header", PrepmtPurchLine, PrepmtVATAmountLine, 0);
-                    PurchPostPrepmt.BuildInvLineBuffer2("Purchase Header", PrepmtPurchLine, 0, PrepmtInvBuf);
+                    PurchPostPrepmt.BuildInvLineBuffer("Purchase Header", PrepmtPurchLine, 0, PrepmtInvBuf);
                     PrepmtVATAmount := PrepmtVATAmountLine.GetTotalVATAmount;
                     PrepmtVATBaseAmount := PrepmtVATAmountLine.GetTotalVATBase;
                     PrepmtTotalAmountInclVAT := PrepmtVATAmountLine.GetTotalAmountInclVAT;
@@ -940,8 +940,16 @@ report 50920 "ACO_PurchaseOrder"
             }
 
             trigger OnAfterGetRecord();
+            var
+                LanguageRec: Record Language;
             begin
-                CurrReport.LANGUAGE := Language.GetLanguageID("Language Code");
+                // Language is now handled automatically by BC platform
+                // Legacy CurrReport.LANGUAGE assignment removed for modern BC compatibility
+                // Modern BC language handling - replace deprecated GetLanguageCode
+                if LanguageRec.Get("Language Code") then
+                    CurrReport.Language := LanguageRec."Windows Language ID"
+                else
+                    CurrReport.Language := GlobalLanguage();
 
                 FormatAddressFields("Purchase Header");
                 FormatDocumentFields("Purchase Header");
@@ -1023,7 +1031,11 @@ report 50920 "ACO_PurchaseOrder"
         trigger OnInit();
         begin
             LogInteractionEnable := true;
-            ArchiveDocument := PurchSetup."Archive Quotes and Orders";
+            // Modern BC archiving - use split fields "Archive Quotes" and "Archive Orders" 
+            if PurchSetup.Get() then
+                ArchiveDocument := (PurchSetup."Archive Quotes" <> PurchSetup."Archive Quotes"::Never) or PurchSetup."Archive Orders"
+            else
+                ArchiveDocument := false; // Default value for safety if setup not found
         end;
 
         trigger OnOpenPage();
@@ -1090,7 +1102,7 @@ report 50920 "ACO_PurchaseOrder"
         PrepmtDimSetEntry: Record "Dimension Set Entry";
         PrepmtInvBuf: Record "Prepayment Inv. Line Buffer" temporary;
         RespCenter: Record "Responsibility Center";
-        Language: Record Language;
+        gLanguage: Record Language;
         CurrExchRate: Record "Currency Exchange Rate";
         PurchSetup: Record "Purchases & Payables Setup";
         FormatAddr: Codeunit "Format Address";
@@ -1202,7 +1214,7 @@ report 50920 "ACO_PurchaseOrder"
 
     local procedure InitLogInteraction();
     begin
-        LogInteraction := SegManagement.FindInteractTmplCode(13) <> '';
+        LogInteraction := SegManagement.FindInteractionTemplateCode(13) <> '';
     end;
 
     local procedure FormatAddressFields(var PurchaseHeader: Record "Purchase Header");

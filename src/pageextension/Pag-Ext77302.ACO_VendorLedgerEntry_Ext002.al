@@ -11,11 +11,11 @@ pageextension 50965 "ACO_VendorLedgerEntry_Ext002" extends "Vendor Ledger Entrie
 
     actions
     {
-        modify("&Rem. Advice")
-        {
-            Visible = false;
-            Enabled = false;
-        }
+        // modify("&Rem. Advice")
+        // {
+        //     Visible = false;
+        //     Enabled = false;
+        // }
 
         addlast("F&unctions")
         {

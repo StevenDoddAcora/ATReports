@@ -832,7 +832,7 @@ report 50925 "ACO_AgedAccountsReceivable"
 
     trigger OnPreReport();
     var
-        CaptionManagement: Codeunit CaptionManagement;
+        CaptionManagement: Codeunit "Format Document";
     begin
         CustFilter := CaptionManagement.GetRecordFiltersWithCaptions(Customer);
 

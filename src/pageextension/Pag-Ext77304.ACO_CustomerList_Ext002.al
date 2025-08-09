@@ -11,13 +11,13 @@ pageextension 50963 "ACO_CustomerList_Ext002" extends "Customer List"
 
     actions
     {
-        modify("Aged Accounts Receivable")
+        modify(ReportAgedAccountsReceivable)
         {
             Visible = false;
             Enabled = false;
         }
 
-        addafter("Aged Accounts Receivable")
+        addafter(ReportAgedAccountsReceivable)
         {
             action(AvtradeAgedAccountsReceivable)
             {

@@ -732,6 +732,7 @@ report 50921 "ACO_AvtradeStatement"
                     trigger OnAfterGetRecord(); // Customer2 DataItem
                     var
                         CustLedgerEntry: Record "Cust. Ledger Entry";
+                        LanguageRec: Record Language;
                     begin
                         //>>
                         if not PaymentTerms.GET("Payment Terms Code") then
@@ -739,7 +740,13 @@ report 50921 "ACO_AvtradeStatement"
                         //<<
 
                         AgingBandBuf.DELETEALL;
-                        CurrReport.LANGUAGE := Language.GetLanguageID("Language Code");
+
+                        // Modern BC language handling - replace deprecated GetLanguageCode
+                        if LanguageRec.Get("Language Code") then
+                            CurrReport.Language := LanguageRec."Windows Language ID"
+                        else
+                            CurrReport.Language := GlobalLanguage();
+
                         PrintLine := false;
                         Cust2 := Customer2;
                         //>>1.3.6.2018
@@ -1252,7 +1259,7 @@ report 50921 "ACO_AvtradeStatement"
         Cust2: Record Customer;
         Currency: Record Currency;
         Currency2: Record Currency temporary;
-        Language: Record Language;
+        gLanguage: Record Language;
         DtldCustLedgEntries2: Record "Detailed Cust. Ledg. Entry";
         AgingBandBuf: Record "Aging Band Buffer" temporary;
         FormatAddr: Codeunit "Format Address";
@@ -1693,7 +1700,7 @@ report 50921 "ACO_AvtradeStatement"
         if (not PrintAllHavingEntry) and (not PrintAllHavingBal) then
             PrintAllHavingBal := true;
 
-        LogInteraction := SegManagement.FindInteractTmplCode(7) <> '';
+        LogInteraction := SegManagement.FindInteractionTemplateCode(7) <> '';
         LogInteractionEnable := LogInteraction;
         // //>>1.3.4.2018
         // IncludeAgingBand := true;

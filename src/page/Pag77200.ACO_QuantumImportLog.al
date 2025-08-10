@@ -1,18 +1,17 @@
-page 50905 "ACO_QuantumImportLog"
+page 50900 "ACO_QuantumImportLog"
 {
     //#region "Documentation"
     // 1.3.6.2018 LBR 08/10/2019 - captions has been changed
     // 1.3.8.2018 LBR 24/10/2019 - Snagging New document Date added;
-    // FUNCTIONALITY RESTORED FROM 2018 AL SOURCE - External table dependency ACO_ImportLog
     //#endregion "Documentation"
 
     PageType = List;
     Caption = 'Import Log';
     ApplicationArea = All;
     UsageCategory = History;
-    //Make page read-only as per original specification
-    Editable = false;
-    SourceTable = ACO_ImportLog; // External extension dependency - AvTrade Core Application
+    //TODO make it not editable
+    //Editable = false;
+    SourceTable = ACO_ImportLog;
 
     layout
     {

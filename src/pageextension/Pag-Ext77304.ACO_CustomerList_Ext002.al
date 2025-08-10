@@ -1,4 +1,4 @@
-pageextension 50963 "ACO_CustomerList_Ext002" extends "Customer List"
+pageextension 50904 "ACO_CustomerList_Ext002" extends "Customer List"
 {
     //#region "Documentation"
     // 1.3.7.2018 LBR 16/10/2019 - Snagging: added Avtrade Aged Accounts Receivable action;
@@ -11,13 +11,13 @@ pageextension 50963 "ACO_CustomerList_Ext002" extends "Customer List"
 
     actions
     {
-        modify(ReportAgedAccountsReceivable)
-        {
-            Visible = false;
-            Enabled = false;
-        }
+        // modify("Aged Accounts Receivable")
+        // {
+        //     Visible = false;
+        //     Enabled = false;
+        // }
 
-        addafter(ReportAgedAccountsReceivable)
+        addafter(Reminder)
         {
             action(AvtradeAgedAccountsReceivable)
             {

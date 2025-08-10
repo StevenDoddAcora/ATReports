@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <DummyCustomer>
+    <Column_CustomerNo>ACCOUNTREF</Column_CustomerNo>
+    <Column2>Description</Column2>
+    <Column3>Currency</Column3>
+    <Column4>Type</Column4>
+    <Column5>Ref</Column5>
+    <Column6>Status</Column6>
+    <Column7>Segment</Column7>
+    <Column8>Class</Column8>
+    <Column9>Rating</Column9>
+    <Column10>Limit</Column10>
+    <Column11>Balance</Column11>
+    <Column12>Outstanding</Column12>
+    <Column13>Overdue</Column13>
+    <Column14>Category</Column14>
+    <Column15>Product</Column15>
+    <Column16>Territory</Column16>
+    <Column17>Manager</Column17>
+    <Column18>Contact</Column18>
+    <Column_Exposure>EXPOSURE</Column_Exposure>
+    <Column20>Notes</Column20>
+  </DummyCustomer>
+  <DummyCustomer>
+    <Column_CustomerNo>ERROR001</Column_CustomerNo>
+    <Column2>Invalid Customer</Column2>
+    <Column3>GBP</Column3>
+    <Column4>Test</Column4>
+    <Column5>ERR01</Column5>
+    <Column6>Test</Column6>
+    <Column7>Test</Column7>
+    <Column8>Test</Column8>
+    <Column9>Test</Column9>
+    <Column10>Test</Column10>
+    <Column11>Test</Column11>
+    <Column12>Test</Column12>
+    <Column13>Test</Column13>
+    <Column14>Test</Column14>
+    <Column15>Test</Column15>
+    <Column16>Test</Column16>
+    <Column17>Test</Column17>
+    <Column18>Test</Column18>
+    <Column_Exposure>1000.00</Column_Exposure>
+    <Column20>Should be ignored - invalid customer</Column20>
+  </DummyCustomer>
+  <DummyCustomer>
+    <Column_CustomerNo></Column_CustomerNo>
+    <Column2>Empty Customer</Column2>
+    <Column3>GBP</Column3>
+    <Column4>Test</Column4>
+    <Column5></Column5>
+    <Column6>Test</Column6>
+    <Column7>Test</Column7>
+    <Column8>Test</Column8>
+    <Column9>Test</Column9>
+    <Column10>Test</Column10>
+    <Column11>Test</Column11>
+    <Column12>Test</Column12>
+    <Column13>Test</Column13>
+    <Column14>Test</Column14>
+    <Column15>Test</Column15>
+    <Column16>Test</Column16>
+    <Column17>Test</Column17>
+    <Column18>Test</Column18>
+    <Column_Exposure>500.00</Column_Exposure>
+    <Column20>Should be ignored - empty customer</Column20>
+  </DummyCustomer>
+  <DummyCustomer>
+    <Column_CustomerNo>CUST999</Column_CustomerNo>
+    <Column2>Valid Customer</Column2>
+    <Column3>EUR</Column3>
+    <Column4>Standard</Column4>
+    <Column5>REF999</Column5>
+    <Column6>Active</Column6>
+    <Column7>Corporate</Column7>
+    <Column8>A</Column8>
+    <Column9>AAA</Column9>
+    <Column10>50000</Column10>
+    <Column11>25000</Column11>
+    <Column12>15000</Column12>
+    <Column13>5000</Column13>
+    <Column14>Premium</Column14>
+    <Column15>Widgets</Column15>
+    <Column16>North</Column16>
+    <Column17>John Smith</Column17>
+    <Column18>j.smith@test.com</Column18>
+    <Column_Exposure>45000.00</Column_Exposure>
+    <Column20>Valid record</Column20>
+  </DummyCustomer>
+</root>

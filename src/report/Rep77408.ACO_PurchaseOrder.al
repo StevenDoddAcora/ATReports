@@ -2,7 +2,7 @@ report 50920 "ACO_PurchaseOrder"
 {
 
     DefaultLayout = RDLC;
-    RDLCLayout = './src/report/layouts/Rep50920_RDLCLayout.rdlc';
+    RDLCLayout = './src/report/layouts/Rep77408_RDLCLayout.rdlc';
     Caption = 'Order';
     PreviewMode = PrintLayout;
 
@@ -709,7 +709,7 @@ report 50920 "ACO_PurchaseOrder"
                         trigger OnPreDataItem();
                         begin
                             //>>FIX
-                            //if("Purchase Header"."Sell-to Customer No." = '') and(ShipToAddr[1] = '') then
+                            //if ("Purchase Header"."Sell-to Customer No." = '') and(ShipToAddr[1] = '') then
                             //    CurrReport.BREAK;
                             //<<FIX
                         end;
@@ -1240,4 +1240,5 @@ report 50920 "ACO_PurchaseOrder"
         end;
     end;
 }
+
 

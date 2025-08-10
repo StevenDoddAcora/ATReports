@@ -1,9 +1,8 @@
-page 50906 "ACO_SpecialRepSelPurch"
+page 50901 "ACO_SpecialRepSelPurch"
 {
     //#region "Documentation"
     // 1.3.5.2018 LBR 01/10/2019 - new object created for CHG003332 (E-mailing Remittance). We do want to use standard NAV to send emials, however
     //      this version of NAV does not allow to extends standard option fields, therfore we will use P.Arch. Quote,P.Arch. Order for bespoke report purpose
-    // FUNCTIONALITY RESTORED FROM 2018 AL SOURCE - BC field compatibility issues require investigation
     //#endregion "Documentation"
 
     Caption = 'Special Report Selection - Purchase';
@@ -26,7 +25,7 @@ page 50906 "ACO_SpecialRepSelPurch"
                 //<<
                 ToolTip = 'Specifies which type of document the report is used for.';
 
-                trigger OnValidate()
+                trigger OnValidate();
                 begin
                     SetUsageFilter(true);
                 end;
@@ -71,12 +70,12 @@ page 50906 "ACO_SpecialRepSelPurch"
                     ApplicationArea = Basic, Suite;
                     ToolTip = 'Specifies a description of the email body layout that is used.';
 
-                    trigger OnDrillDown()
+                    trigger OnDrillDown();
                     var
                         CustomReportLayout: Record "Custom Report Layout";
                     begin
                         if CustomReportLayout.LookupLayoutOK(Rec."Report ID") then
-                            Rec.Validate("Email Body Layout Code", CustomReportLayout.Code);
+                            Rec.VALIDATE("Email Body Layout Code", CustomReportLayout.Code);
                     end;
                 }
             }
@@ -98,12 +97,12 @@ page 50906 "ACO_SpecialRepSelPurch"
     {
     }
 
-    trigger OnNewRecord(BelowxRec: Boolean)
+    trigger OnNewRecord(BelowxRec: Boolean);
     begin
         Rec.NewRecord();
     end;
 
-    trigger OnOpenPage()
+    trigger OnOpenPage();
     begin
         SetUsageFilter(false);
     end;
@@ -111,43 +110,43 @@ page 50906 "ACO_SpecialRepSelPurch"
     var
         ReportUsage2: Option Quote,"Blanket Order","Order",Invoice,"Return Order","Credit Memo",Receipt,"Return Shipment","Purchase Document - Test","Prepayment Document - Test","Remittance Jnl","Remittance Entries","P. Arch. Return Order";
 
-    local procedure SetUsageFilter(ModifyRec: Boolean)
+    local procedure SetUsageFilter(ModifyRec: Boolean);
     begin
         if ModifyRec then
-            if Rec.Modify() then;
-        Rec.FilterGroup(2);
+            if Rec.MODIFY then;
+        Rec.FILTERGROUP(2);
         case ReportUsage2 of
             ReportUsage2::Quote:
-                Rec.SetRange(Usage, Rec.Usage::"P.Quote");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Quote");
             ReportUsage2::"Blanket Order":
-                Rec.SetRange(Usage, Rec.Usage::"P.Blanket");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Blanket");
             ReportUsage2::Order:
-                Rec.SetRange(Usage, Rec.Usage::"P.Order");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Order");
             ReportUsage2::Invoice:
-                Rec.SetRange(Usage, Rec.Usage::"P.Invoice");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Invoice");
             ReportUsage2::"Return Order":
-                Rec.SetRange(Usage, Rec.Usage::"P.Return");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Return");
             ReportUsage2::"Credit Memo":
-                Rec.SetRange(Usage, Rec.Usage::"P.Cr.Memo");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Cr.Memo");
             ReportUsage2::Receipt:
-                Rec.SetRange(Usage, Rec.Usage::"P.Receipt");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Receipt");
             ReportUsage2::"Return Shipment":
-                Rec.SetRange(Usage, Rec.Usage::"P.Ret.Shpt.");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Ret.Shpt.");
             ReportUsage2::"Purchase Document - Test":
-                Rec.SetRange(Usage, Rec.Usage::"P.Test");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Test");
             ReportUsage2::"Prepayment Document - Test":
-                Rec.SetRange(Usage, Rec.Usage::"P.Test Prepmt.");
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Test Prepmt.");
             //>>
             ReportUsage2::"Remittance Jnl":
-                Rec.SetRange(Usage, Rec.Usage::"P.Quote"); // Microsoft confirmed P.Arch.Quote is valid BC enum
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Arch.Quote");
             ReportUsage2::"Remittance Entries":
-                Rec.SetRange(Usage, Rec.Usage::"P.Order"); // Microsoft confirmed P.Arch.Order is valid BC enum  
-                                                           //<<
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Arch.Order");
+            //<<
             ReportUsage2::"P. Arch. Return Order":
-                Rec.SetRange(Usage, Rec.Usage::"P.Return"); // Microsoft confirmed P.Arch.Return is valid BC enum
+                Rec.SETRANGE(Usage, Rec.Usage::"P.Arch.Return");
         end;
-        Rec.FilterGroup(0);
-        CurrPage.Update();
+        Rec.FILTERGROUP(0);
+        CurrPage.UPDATE;
     end;
 }
 

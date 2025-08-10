@@ -7,7 +7,7 @@ report 50925 "ACO_AgedAccountsReceivable"
     //#endregion "Documentation"
 
     DefaultLayout = RDLC;
-    RDLCLayout = './src/report/layouts/Rep50925.AVT_AgedAccountsReceivable.rdlc';
+    RDLCLayout = './src/report/layouts/Rep77413.AVT_AgedAccountsReceivable.rdlc';
     Caption = 'Aged Accounts Receivable (Avtrade)';
     PreviewMode = PrintLayout;
     UsageCategory = ReportsAndAnalysis;

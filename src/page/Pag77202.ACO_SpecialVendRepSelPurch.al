@@ -1,8 +1,8 @@
 page 50902 "ACO_SpecialVendRepSelPurch"
 {
     //#region "Documentation"
-    // 1.3.5.2018 LBR 01/10/2019 - new object created for CHG003332 (E-mailing Remittance). Uses custom enum extension
-    //      ACO_ReportSelectionUsage_Ext with values ACO_Remittance_Journal and ACO_Remittance_Entries for bespoke report purpose
+    // 1.3.5.2018 LBR 01/10/2019 - new object created for CHG003332 (E-mailing Remittance). We do want to use standard NAV to send emials, however
+    //      this version of NAV does not allow to extends standard option fields, therfore we will use P.Arch. Quote,P.Arch. Order for bespoke report purpose
     //#endregion "Documentation"
 
     Caption = 'Vendor Special Report Selections';
@@ -29,9 +29,9 @@ page 50902 "ACO_SpecialVendRepSelPurch"
                     begin
                         case Usage2 of
                             Usage2::"Remittance Jnl":
-                                Rec."Usage" := Rec.Usage::"P.Arch.Quote";
+                                Rec.Usage := Rec.Usage::"P.Arch.Quote";
                             Usage2::"Remittance Entries":
-                                Rec."Usage" := Rec.Usage::"P.Arch.Order";
+                                Rec.Usage := Rec.Usage::"P.Arch.Order";
                         end;
                     end;
                 }
@@ -137,7 +137,9 @@ page 50902 "ACO_SpecialVendRepSelPurch"
     trigger OnNewRecord(BelowxRec: Boolean);
     begin
         // Set the default usage to the same as the page default.
-        Rec.Usage := Rec.Usage::"P.Arch.Quote";
+        if Rec.Usage = 0 then
+            Rec.Usage := Rec.Usage::"P.Arch.Quote";
+
         MapTableUsageValueToPageValue;
     end;
 

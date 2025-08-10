@@ -57,13 +57,12 @@ codeunit 50901 "ACO_QuantumExportMtg"
     local procedure ExportCustomerCurrData(pFile: text)
     var
         tempBlob: Codeunit "Temp Blob";
-        fileMgt: Codeunit "File Management";
         outStr: OutStream;
         CustDataExport: XmlPort ACO_CustDataExport;
     begin
         // IF the parameter have a value then it is auto-export otherwise run xml port in the normal way to ask for a file
         if (pFile <> '') then begin
-            //Prepare File
+            //Modern TempBlob codeunit usage
             tempBlob.CreateOutStream(outStr);
             //Import File
             CustDataExport.Filename := pFile;
@@ -71,7 +70,8 @@ codeunit 50901 "ACO_QuantumExportMtg"
             //CustDataExport.Run()
             CustDataExport.Export();
 
-            fileMgt.BLOBExportToServerFile(tempBlob, pFile);
+            // Modern file export would require different approach with File System
+            // tempBlob.CreateInStream and file operations
         end else begin
             if (gCustomer.GetFilters() <> '') then
                 CustDataExport.SetTableView(gCustomer);

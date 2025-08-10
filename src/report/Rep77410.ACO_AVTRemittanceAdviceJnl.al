@@ -5,7 +5,7 @@ report 50922 "ACO_AVTRemittanceAdviceJnl"
     //#endregion "Documentation"
 
     DefaultLayout = RDLC;
-    RDLCLayout = './src/report/layouts/Rep50922.AVTRemittanceAdviceJnl.rdlc';
+    RDLCLayout = './src/report/layouts/Rep77410.AVTRemittanceAdviceJnl.rdlc';
     Caption = 'Remittance Advice - Journal';
     PreviewMode = PrintLayout;
 

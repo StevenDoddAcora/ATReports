@@ -1,4 +1,4 @@
-pageextension 50964 "ACO_VendorCard_Ext002" extends "Vendor Card"
+pageextension 50903 "ACO_VendorCard_Ext002" extends "Vendor Card"
 {
     //#region "Documentation"
     // 1.3.5.2018 LBR 01/10/2019 - new object created for CHG003332 (E-mailing Remittance). We do want to use standard NAV to send emials, however

@@ -1,4 +1,4 @@
-page 50907 "ACO_CustomerAgingDetails"
+page 50903 "ACO_CustomerAgingDetails"
 {
     //#region Documentation
     // 1.3.7.2018 LBR 16/10/2019 - CHG003339 (Customer Average Collection Period) - new page for calculation puprose added;

@@ -1,0 +1,6 @@
+ACCOUNTREF,Company,Currency,Type,Reference,Status,Region,Category,Class,SubClass,Group,Dept,Division,Location,Zone,Branch,Manager,Analyst,EXPOSURE,LastUpdate
+C001,Avtrade UK Ltd,GBP,Corporate,AV001,Active,EMEA,Manufacturing,A1,Sub1,Grp1,Sales,Div1,London,Zone1,Branch1,Manager1,Analyst1,50000.00,2024-01-15
+C002,Avtrade USA Inc,USD,Corporate,AV002,Active,Americas,Trading,A2,Sub2,Grp2,Procurement,Div2,New York,Zone2,Branch2,Manager2,Analyst2,75000.50,2024-01-15
+C003,Avtrade Europe BV,EUR,Corporate,AV003,Active,EMEA,Logistics,B1,Sub3,Grp3,Operations,Div3,Amsterdam,Zone3,Branch3,Manager3,Analyst3,25000.75,2024-01-15
+C004,Small Customer Ltd,GBP,SME,SM001,Active,EMEA,Retail,C1,Sub4,Grp4,Sales,Div1,Birmingham,Zone1,Branch4,Manager1,Analyst4,2500.00,2024-01-15
+C005,Medium Corp Inc,USD,Mid,MD001,Active,Americas,Services,B2,Sub5,Grp5,Marketing,Div2,Chicago,Zone4,Branch5,Manager4,Analyst5,15000.25,2024-01-15

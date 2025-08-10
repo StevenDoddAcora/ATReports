@@ -10,241 +10,6 @@
       <rd:DataSourceID>80089e8c-288b-4734-831f-e69c9baadd5a</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="VendAddr1">
-          <DataField>VendAddr1</DataField>
-        </Field>
-        <Field Name="VendAddr2">
-          <DataField>VendAddr2</DataField>
-        </Field>
-        <Field Name="CompAddr1">
-          <DataField>CompAddr1</DataField>
-        </Field>
-        <Field Name="CompAddr2">
-          <DataField>CompAddr2</DataField>
-        </Field>
-        <Field Name="VendAddr3">
-          <DataField>VendAddr3</DataField>
-        </Field>
-        <Field Name="CompAddr3">
-          <DataField>CompAddr3</DataField>
-        </Field>
-        <Field Name="VendorAddr4">
-          <DataField>VendorAddr4</DataField>
-        </Field>
-        <Field Name="CompAddr4">
-          <DataField>CompAddr4</DataField>
-        </Field>
-        <Field Name="VendAddr5">
-          <DataField>VendAddr5</DataField>
-        </Field>
-        <Field Name="CompAddr5">
-          <DataField>CompAddr5</DataField>
-        </Field>
-        <Field Name="VendAddr6">
-          <DataField>VendAddr6</DataField>
-        </Field>
-        <Field Name="CompAddr6">
-          <DataField>CompAddr6</DataField>
-        </Field>
-        <Field Name="VendAddr7">
-          <DataField>VendAddr7</DataField>
-        </Field>
-        <Field Name="CompInfoPhoneNo">
-          <DataField>CompInfoPhoneNo</DataField>
-        </Field>
-        <Field Name="VendAddr8">
-          <DataField>VendAddr8</DataField>
-        </Field>
-        <Field Name="CompInfoFaxNo">
-          <DataField>CompInfoFaxNo</DataField>
-        </Field>
-        <Field Name="CompInfoVATRegNo">
-          <DataField>CompInfoVATRegNo</DataField>
-        </Field>
-        <Field Name="CompInfoBankName">
-          <DataField>CompInfoBankName</DataField>
-        </Field>
-        <Field Name="CompInfoBankBranchNo">
-          <DataField>CompInfoBankBranchNo</DataField>
-        </Field>
-        <Field Name="CompInfoBankAccNo">
-          <DataField>CompInfoBankAccNo</DataField>
-        </Field>
-        <Field Name="VendLoopNumber">
-          <DataField>VendLoopNumber</DataField>
-        </Field>
-        <Field Name="RemittanceAdviceCaption">
-          <DataField>RemittanceAdviceCaption</DataField>
-        </Field>
-        <Field Name="PhoneNoCaption">
-          <DataField>PhoneNoCaption</DataField>
-        </Field>
-        <Field Name="FaxNoCaption">
-          <DataField>FaxNoCaption</DataField>
-        </Field>
-        <Field Name="VATRegNoCaption">
-          <DataField>VATRegNoCaption</DataField>
-        </Field>
-        <Field Name="BankCaption">
-          <DataField>BankCaption</DataField>
-        </Field>
-        <Field Name="SortCodeCaption">
-          <DataField>SortCodeCaption</DataField>
-        </Field>
-        <Field Name="AccNoCaption">
-          <DataField>AccNoCaption</DataField>
-        </Field>
-        <Field Name="OriginalAmtCaption">
-          <DataField>OriginalAmtCaption</DataField>
-        </Field>
-        <Field Name="DocDateCaption">
-          <DataField>DocDateCaption</DataField>
-        </Field>
-        <Field Name="DocNoCaption">
-          <DataField>DocNoCaption</DataField>
-        </Field>
-        <Field Name="DocTypeCaption">
-          <DataField>DocTypeCaption</DataField>
-        </Field>
-        <Field Name="CheckNoCaption">
-          <DataField>CheckNoCaption</DataField>
-        </Field>
-        <Field Name="RemainingAmtCaption">
-          <DataField>RemainingAmtCaption</DataField>
-        </Field>
-        <Field Name="PmdDiscRecCaption">
-          <DataField>PmdDiscRecCaption</DataField>
-        </Field>
-        <Field Name="PaidAmtCaption">
-          <DataField>PaidAmtCaption</DataField>
-        </Field>
-        <Field Name="CurrCodeCaption">
-          <DataField>CurrCodeCaption</DataField>
-        </Field>
-        <Field Name="Picture_CompanyInfo">
-          <DataField>Picture_CompanyInfo</DataField>
-        </Field>
-        <Field Name="CompAddr7">
-          <DataField>CompAddr7</DataField>
-        </Field>
-        <Field Name="CompAddr8">
-          <DataField>CompAddr8</DataField>
-        </Field>
-        <Field Name="CheckNo">
-          <DataField>CheckNo</DataField>
-        </Field>
-        <Field Name="Amt_GenJournalLine">
-          <DataField>Amt_GenJournalLine</DataField>
-        </Field>
-        <Field Name="Amt_GenJournalLineFormat">
-          <DataField>Amt_GenJournalLineFormat</DataField>
-        </Field>
-        <Field Name="CurrCode">
-          <DataField>CurrCode</DataField>
-        </Field>
-        <Field Name="JnlBatchName_GenJournalLine">
-          <DataField>JnlBatchName_GenJournalLine</DataField>
-        </Field>
-        <Field Name="DocNo_GenJnlLine">
-          <DataField>DocNo_GenJnlLine</DataField>
-        </Field>
-        <Field Name="AccNo_GenJournalLine">
-          <DataField>AccNo_GenJournalLine</DataField>
-        </Field>
-        <Field Name="AppliestoDocType_GenJnlLine">
-          <DataField>AppliestoDocType_GenJnlLine</DataField>
-        </Field>
-        <Field Name="TotalCaption">
-          <DataField>TotalCaption</DataField>
-        </Field>
-        <Field Name="PostingDate_GenJnlLine">
-          <DataField>PostingDate_GenJnlLine</DataField>
-        </Field>
-        <Field Name="AccountRef_GenJnlLnie">
-          <DataField>AccountRef_GenJnlLnie</DataField>
-        </Field>
-        <Field Name="ExternalDocNo_GenJnlLine">
-          <DataField>ExternalDocNo_GenJnlLine</DataField>
-        </Field>
-        <Field Name="AppliedVendLedgEntryTempDocType">
-          <DataField>AppliedVendLedgEntryTempDocType</DataField>
-        </Field>
-        <Field Name="AppliedVendLedgEntryTempExternalDocNo">
-          <DataField>AppliedVendLedgEntryTempExternalDocNo</DataField>
-        </Field>
-        <Field Name="AppliedVendLedgEntryTempDocDate">
-          <DataField>AppliedVendLedgEntryTempDocDate</DataField>
-        </Field>
-        <Field Name="AppliedVendLedgEntryTempCurrCode">
-          <DataField>AppliedVendLedgEntryTempCurrCode</DataField>
-        </Field>
-        <Field Name="AppliedVendLedgEntryTempOriginalAmt">
-          <DataField>AppliedVendLedgEntryTempOriginalAmt</DataField>
-        </Field>
-        <Field Name="AppliedVendLedgEntryTempOriginalAmtFormat">
-          <DataField>AppliedVendLedgEntryTempOriginalAmtFormat</DataField>
-        </Field>
-        <Field Name="AppliedVendLedgEntryTempRemainingAmt">
-          <DataField>AppliedVendLedgEntryTempRemainingAmt</DataField>
-        </Field>
-        <Field Name="AppliedVendLedgEntryTempRemainingAmtFormat">
-          <DataField>AppliedVendLedgEntryTempRemainingAmtFormat</DataField>
-        </Field>
-        <Field Name="PmdDiscRec">
-          <DataField>PmdDiscRec</DataField>
-        </Field>
-        <Field Name="PmdDiscRecFormat">
-          <DataField>PmdDiscRecFormat</DataField>
-        </Field>
-        <Field Name="PaidAmount">
-          <DataField>PaidAmount</DataField>
-        </Field>
-        <Field Name="PaidAmountFormat">
-          <DataField>PaidAmountFormat</DataField>
-        </Field>
-        <Field Name="PrintLoopNumber">
-          <DataField>PrintLoopNumber</DataField>
-        </Field>
-        <Field Name="PostingDate_AppliedVendLedgEntryTemp">
-          <DataField>PostingDate_AppliedVendLedgEntryTemp</DataField>
-        </Field>
-        <Field Name="DocNo_AppliedVendLedgEntryTemp">
-          <DataField>DocNo_AppliedVendLedgEntryTemp</DataField>
-        </Field>
-        <Field Name="Description_AppliedVendLedgEntryTemp">
-          <DataField>Description_AppliedVendLedgEntryTemp</DataField>
-        </Field>
-        <Field Name="gDebit">
-          <DataField>gDebit</DataField>
-        </Field>
-        <Field Name="gDebitFormat">
-          <DataField>gDebitFormat</DataField>
-        </Field>
-        <Field Name="gCredit">
-          <DataField>gCredit</DataField>
-        </Field>
-        <Field Name="gCreditFormat">
-          <DataField>gCreditFormat</DataField>
-        </Field>
-        <Field Name="TotalAmount">
-          <DataField>TotalAmount</DataField>
-        </Field>
-        <Field Name="TotalAmountFormat">
-          <DataField>TotalAmountFormat</DataField>
-        </Field>
-        <Field Name="TotalCurrCode">
-          <DataField>TotalCurrCode</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -2279,4 +2044,239 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>f7f7ba4d-8501-4271-9bc8-e6c56886b1bd</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="VendAddr1">
+          <DataField>VendAddr1</DataField>
+        </Field>
+        <Field Name="VendAddr2">
+          <DataField>VendAddr2</DataField>
+        </Field>
+        <Field Name="CompAddr1">
+          <DataField>CompAddr1</DataField>
+        </Field>
+        <Field Name="CompAddr2">
+          <DataField>CompAddr2</DataField>
+        </Field>
+        <Field Name="VendAddr3">
+          <DataField>VendAddr3</DataField>
+        </Field>
+        <Field Name="CompAddr3">
+          <DataField>CompAddr3</DataField>
+        </Field>
+        <Field Name="VendorAddr4">
+          <DataField>VendorAddr4</DataField>
+        </Field>
+        <Field Name="CompAddr4">
+          <DataField>CompAddr4</DataField>
+        </Field>
+        <Field Name="VendAddr5">
+          <DataField>VendAddr5</DataField>
+        </Field>
+        <Field Name="CompAddr5">
+          <DataField>CompAddr5</DataField>
+        </Field>
+        <Field Name="VendAddr6">
+          <DataField>VendAddr6</DataField>
+        </Field>
+        <Field Name="CompAddr6">
+          <DataField>CompAddr6</DataField>
+        </Field>
+        <Field Name="VendAddr7">
+          <DataField>VendAddr7</DataField>
+        </Field>
+        <Field Name="CompInfoPhoneNo">
+          <DataField>CompInfoPhoneNo</DataField>
+        </Field>
+        <Field Name="VendAddr8">
+          <DataField>VendAddr8</DataField>
+        </Field>
+        <Field Name="CompInfoFaxNo">
+          <DataField>CompInfoFaxNo</DataField>
+        </Field>
+        <Field Name="CompInfoVATRegNo">
+          <DataField>CompInfoVATRegNo</DataField>
+        </Field>
+        <Field Name="CompInfoBankName">
+          <DataField>CompInfoBankName</DataField>
+        </Field>
+        <Field Name="CompInfoBankBranchNo">
+          <DataField>CompInfoBankBranchNo</DataField>
+        </Field>
+        <Field Name="CompInfoBankAccNo">
+          <DataField>CompInfoBankAccNo</DataField>
+        </Field>
+        <Field Name="VendLoopNumber">
+          <DataField>VendLoopNumber</DataField>
+        </Field>
+        <Field Name="RemittanceAdviceCaption">
+          <DataField>RemittanceAdviceCaption</DataField>
+        </Field>
+        <Field Name="PhoneNoCaption">
+          <DataField>PhoneNoCaption</DataField>
+        </Field>
+        <Field Name="FaxNoCaption">
+          <DataField>FaxNoCaption</DataField>
+        </Field>
+        <Field Name="VATRegNoCaption">
+          <DataField>VATRegNoCaption</DataField>
+        </Field>
+        <Field Name="BankCaption">
+          <DataField>BankCaption</DataField>
+        </Field>
+        <Field Name="SortCodeCaption">
+          <DataField>SortCodeCaption</DataField>
+        </Field>
+        <Field Name="AccNoCaption">
+          <DataField>AccNoCaption</DataField>
+        </Field>
+        <Field Name="OriginalAmtCaption">
+          <DataField>OriginalAmtCaption</DataField>
+        </Field>
+        <Field Name="DocDateCaption">
+          <DataField>DocDateCaption</DataField>
+        </Field>
+        <Field Name="DocNoCaption">
+          <DataField>DocNoCaption</DataField>
+        </Field>
+        <Field Name="DocTypeCaption">
+          <DataField>DocTypeCaption</DataField>
+        </Field>
+        <Field Name="CheckNoCaption">
+          <DataField>CheckNoCaption</DataField>
+        </Field>
+        <Field Name="RemainingAmtCaption">
+          <DataField>RemainingAmtCaption</DataField>
+        </Field>
+        <Field Name="PmdDiscRecCaption">
+          <DataField>PmdDiscRecCaption</DataField>
+        </Field>
+        <Field Name="PaidAmtCaption">
+          <DataField>PaidAmtCaption</DataField>
+        </Field>
+        <Field Name="CurrCodeCaption">
+          <DataField>CurrCodeCaption</DataField>
+        </Field>
+        <Field Name="Picture_CompanyInfo">
+          <DataField>Picture_CompanyInfo</DataField>
+        </Field>
+        <Field Name="CompAddr7">
+          <DataField>CompAddr7</DataField>
+        </Field>
+        <Field Name="CompAddr8">
+          <DataField>CompAddr8</DataField>
+        </Field>
+        <Field Name="CheckNo">
+          <DataField>CheckNo</DataField>
+        </Field>
+        <Field Name="Amt_GenJournalLine">
+          <DataField>Amt_GenJournalLine</DataField>
+        </Field>
+        <Field Name="Amt_GenJournalLineFormat">
+          <DataField>Amt_GenJournalLineFormat</DataField>
+        </Field>
+        <Field Name="CurrCode">
+          <DataField>CurrCode</DataField>
+        </Field>
+        <Field Name="JnlBatchName_GenJournalLine">
+          <DataField>JnlBatchName_GenJournalLine</DataField>
+        </Field>
+        <Field Name="DocNo_GenJnlLine">
+          <DataField>DocNo_GenJnlLine</DataField>
+        </Field>
+        <Field Name="AccNo_GenJournalLine">
+          <DataField>AccNo_GenJournalLine</DataField>
+        </Field>
+        <Field Name="AppliestoDocType_GenJnlLine">
+          <DataField>AppliestoDocType_GenJnlLine</DataField>
+        </Field>
+        <Field Name="TotalCaption">
+          <DataField>TotalCaption</DataField>
+        </Field>
+        <Field Name="PostingDate_GenJnlLine">
+          <DataField>PostingDate_GenJnlLine</DataField>
+        </Field>
+        <Field Name="AccountRef_GenJnlLnie">
+          <DataField>AccountRef_GenJnlLnie</DataField>
+        </Field>
+        <Field Name="ExternalDocNo_GenJnlLine">
+          <DataField>ExternalDocNo_GenJnlLine</DataField>
+        </Field>
+        <Field Name="AppliedVendLedgEntryTempDocType">
+          <DataField>AppliedVendLedgEntryTempDocType</DataField>
+        </Field>
+        <Field Name="AppliedVendLedgEntryTempExternalDocNo">
+          <DataField>AppliedVendLedgEntryTempExternalDocNo</DataField>
+        </Field>
+        <Field Name="AppliedVendLedgEntryTempDocDate">
+          <DataField>AppliedVendLedgEntryTempDocDate</DataField>
+        </Field>
+        <Field Name="AppliedVendLedgEntryTempCurrCode">
+          <DataField>AppliedVendLedgEntryTempCurrCode</DataField>
+        </Field>
+        <Field Name="AppliedVendLedgEntryTempOriginalAmt">
+          <DataField>AppliedVendLedgEntryTempOriginalAmt</DataField>
+        </Field>
+        <Field Name="AppliedVendLedgEntryTempOriginalAmtFormat">
+          <DataField>AppliedVendLedgEntryTempOriginalAmtFormat</DataField>
+        </Field>
+        <Field Name="AppliedVendLedgEntryTempRemainingAmt">
+          <DataField>AppliedVendLedgEntryTempRemainingAmt</DataField>
+        </Field>
+        <Field Name="AppliedVendLedgEntryTempRemainingAmtFormat">
+          <DataField>AppliedVendLedgEntryTempRemainingAmtFormat</DataField>
+        </Field>
+        <Field Name="PmdDiscRec">
+          <DataField>PmdDiscRec</DataField>
+        </Field>
+        <Field Name="PmdDiscRecFormat">
+          <DataField>PmdDiscRecFormat</DataField>
+        </Field>
+        <Field Name="PaidAmount">
+          <DataField>PaidAmount</DataField>
+        </Field>
+        <Field Name="PaidAmountFormat">
+          <DataField>PaidAmountFormat</DataField>
+        </Field>
+        <Field Name="PrintLoopNumber">
+          <DataField>PrintLoopNumber</DataField>
+        </Field>
+        <Field Name="PostingDate_AppliedVendLedgEntryTemp">
+          <DataField>PostingDate_AppliedVendLedgEntryTemp</DataField>
+        </Field>
+        <Field Name="DocNo_AppliedVendLedgEntryTemp">
+          <DataField>DocNo_AppliedVendLedgEntryTemp</DataField>
+        </Field>
+        <Field Name="Description_AppliedVendLedgEntryTemp">
+          <DataField>Description_AppliedVendLedgEntryTemp</DataField>
+        </Field>
+        <Field Name="gDebit">
+          <DataField>gDebit</DataField>
+        </Field>
+        <Field Name="gDebitFormat">
+          <DataField>gDebitFormat</DataField>
+        </Field>
+        <Field Name="gCredit">
+          <DataField>gCredit</DataField>
+        </Field>
+        <Field Name="gCreditFormat">
+          <DataField>gCreditFormat</DataField>
+        </Field>
+        <Field Name="TotalAmount">
+          <DataField>TotalAmount</DataField>
+        </Field>
+        <Field Name="TotalAmountFormat">
+          <DataField>TotalAmountFormat</DataField>
+        </Field>
+        <Field Name="TotalCurrCode">
+          <DataField>TotalCurrCode</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>

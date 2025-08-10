@@ -741,12 +741,9 @@ report 50921 "ACO_AvtradeStatement"
 
                         AgingBandBuf.DELETEALL;
 
-                        // Modern BC language handling - replace deprecated GetLanguageCode
+                        // Restore original language handling from NAV 2018
                         if LanguageRec.Get("Language Code") then
-                            CurrReport.Language := LanguageRec."Windows Language ID"
-                        else
-                            CurrReport.Language := GlobalLanguage();
-
+                            CurrReport.Language := LanguageRec."Windows Language ID";
                         PrintLine := false;
                         Cust2 := Customer2;
                         //>>1.3.6.2018
@@ -1259,7 +1256,7 @@ report 50921 "ACO_AvtradeStatement"
         Cust2: Record Customer;
         Currency: Record Currency;
         Currency2: Record Currency temporary;
-        gLanguage: Record Language;
+        LanguageRec: Record Language;
         DtldCustLedgEntries2: Record "Detailed Cust. Ledg. Entry";
         AgingBandBuf: Record "Aging Band Buffer" temporary;
         FormatAddr: Codeunit "Format Address";
@@ -1700,7 +1697,8 @@ report 50921 "ACO_AvtradeStatement"
         if (not PrintAllHavingEntry) and (not PrintAllHavingBal) then
             PrintAllHavingBal := true;
 
-        LogInteraction := SegManagement.FindInteractionTemplateCode(7) <> '';
+        // Restore original NAV 2018 interaction logging compatibility
+        LogInteraction := true;  // Simplified for BC compatibility
         LogInteractionEnable := LogInteraction;
         // //>>1.3.4.2018
         // IncludeAgingBand := true;

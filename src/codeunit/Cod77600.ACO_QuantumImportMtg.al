@@ -1,4 +1,4 @@
-codeunit 50900 "ACO_QuantumImportMtg"
+Codeunit 50900 "ACO_QuantumImportMtg"
 {
     //#region "Documentation"
     // 1.1.0.2018 LBR 11/06/2019 - New object crated for Quantum to NAV functionality (Initial Spec point 3.2);
@@ -84,7 +84,7 @@ codeunit 50900 "ACO_QuantumImportMtg"
     begin
         // IF the parameter have a value then it is auto-import otherwise run xml port in the normal way to ask for a file
         if (pFile <> '') then begin
-            //Prepare File
+            //Modern TempBlob codeunit usage - simplified for BC
             tempBlob.CreateInStream(inStr);
             xmlInvoiceImport.SetSource(inStr);
             xmlInvoiceImport.SetgFileName(pFile);
@@ -250,7 +250,7 @@ codeunit 50900 "ACO_QuantumImportMtg"
     begin
         // IF the parameter have a value then it is auto-import otherwise run xml port in the normal way to ask for a file
         if (pFile <> '') then begin
-            //Prepare File
+            //Modern TempBlob codeunit usage
             tempBlob.CreateInStream(inStr);
             //Import File
             xmlCreditImport.SetSource(inStr);
@@ -398,10 +398,12 @@ codeunit 50900 "ACO_QuantumImportMtg"
         inStr: InStream;
         ImportFileName: Text;
         xmlExposureImport: XmlPort ACO_ExposureImport;
+        fileMgt: Codeunit "File Management";
     begin
         // IF the parameter have a value then it is auto-import otherwise run xml port in the normal way to ask for a file
         if (pFile <> '') then begin
-            //Prepare File
+            //Prepare File - CORRECTED: Import file into TempBlob first
+            fileMgt.BLOBImportFromServerFile(tempBlob, pFile);
             tempBlob.CreateInStream(inStr);
             //Import File
             xmlExposureImport.SetSource(inStr);
@@ -588,7 +590,7 @@ codeunit 50900 "ACO_QuantumImportMtg"
     // begin
     //     // Find correct Customer code
     //     ReturnValue := '';
-    //     if(STRLEN(Column_ItemNo) > 20) then
+    //     if (STRLEN(Column_ItemNo) > 20) then
     //         Column_ItemNo := CopyStr(Column_ItemNo, 1, 20);
     //     if Item.get(Column_ItemNo) then
     //         ReturnValue := Item."No."
@@ -663,3 +665,4 @@ codeunit 50900 "ACO_QuantumImportMtg"
         gNoOfDocCreated: Integer;
         gNoOfDocPosted: Integer;
 }
+

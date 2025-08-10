@@ -1,0 +1,5 @@
+ACCOUNTREF,Description,Currency,Type,Ref,Status,Segment,Class,Rating,Limit,Balance,Outstanding,Overdue,Category,Product,Territory,Manager,Contact,EXPOSURE,Notes
+ERROR001,Invalid Customer,GBP,Test,ERR01,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,1000.00,Should be ignored - invalid customer
+,Empty Customer,GBP,Test,,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,500.00,Should be ignored - empty customer
+CUST999,Valid Customer,EUR,Standard,REF999,Active,Corporate,A,AAA,50000,25000,15000,5000,Premium,Widgets,North,John Smith,j.smith@test.com,45000.00,Valid record
+,,,,,,,,,,,,,,,,,,-999.99,Empty customer number - should be ignored

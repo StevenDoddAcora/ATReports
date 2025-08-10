@@ -1,0 +1,7 @@
+ACCOUNTREF,DATA2,DATA3,DATA4,DATA5,DATA6,DATA7,DATA8,DATA9,DATA10,DATA11,DATA12,DATA13,DATA14,DATA15,DATA16,DATA17,DATA18,EXPOSURE,NOTES
+CUST001,REF001,GBP,Invoice,12345,Active,,,,,,,,,,,,,1250.00,Updated exposure
+CUST002,REF002,USD,Credit,67890,Active,,,,,,,,,,,,,2500.75,New customer
+CUST003,REF003,EUR,Invoice,11111,Active,,,,,,,,,,,,,0.00,Zero exposure allowed
+CUST004,REF004,GBP,Invoice,22222,Active,,,,,,,,,,,,,7500.25,High exposure
+CUST005,REF005,USD,Credit,33333,Active,,,,,,,,,,,,,3750.50,Medium exposure
+CUST006,REF006,EUR,Invoice,44444,Inactive,,,,,,,,,,,,,1000.00,Inactive customer

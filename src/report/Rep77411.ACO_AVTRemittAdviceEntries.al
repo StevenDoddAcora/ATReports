@@ -5,7 +5,7 @@ report 50923 "ACO_AVTRemittAdviceEntries"
     //#endregion "Documentation"
 
     DefaultLayout = RDLC;
-    RDLCLayout = './src/report/layouts/Rep50923.AVTRemittAdviceEntries.rdlc';
+    RDLCLayout = './src/report/layouts/Rep77411.AVTRemittAdviceEntries.rdlc';
     Caption = 'Remittance Advice - Entries';
     PreviewMode = PrintLayout;
 

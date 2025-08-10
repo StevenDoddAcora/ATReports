@@ -273,87 +273,19 @@ codeunit 50903 "ACO_IntegrationMgt"
     begin
         //if not Vendor.Get(PostedDocNo) then
         //    Vendor.init();
-        // The subject and attached file name is hardcoded atm and should be adjusted once Avtrade will confirm how it should look like
+        // The subject is handled in modern email functionality
         if IsRemittanceReportUsage(ReportUsage) then begin
             TempEmailItem.Subject := 'Remittance Advice';
             if CompanyInfo.GET() then
                 TempEmailItem.Subject := TempEmailItem.Subject + ' From ' + CompanyInfo.Name;
-            // Modern BC: Attachment name handled automatically by email system during report generation
-            // Original 2018 functionality: TempEmailItem."Attachment Name" := 'Remittance Advice.pdf';
         end;
     end;
+
     //#endregion Email Subscriber
 
     //#region Help Functions
     local procedure _____HelpFunctions_____();
     begin
-    end;
-
-    local procedure CreateAndSendEmail(BodyFilePath: Text; DocNo: Code[20]; EmailAddress: Text; DocName: Text; ShowDialog: Boolean; ReportUsage: Integer): Boolean
-    var
-        EmailMessage: Codeunit "Email Message";
-        Email: Codeunit Email;
-        TempBlob: Codeunit "Temp Blob";
-        FileMgt: Codeunit "File Management";
-        InStr: InStream;
-        BodyText: Text;
-    begin
-        // Create email message with modern API
-        EmailMessage.Create(EmailAddress, 'Remittance Advice', '', true);
-
-        // Load email body if file exists
-        if BodyFilePath <> '' then begin
-            if FileMgt.ServerFileExists(BodyFilePath) then begin
-                FileMgt.BLOBImportFromServerFile(TempBlob, BodyFilePath);
-                TempBlob.CreateInStream(InStr);
-                InStr.ReadText(BodyText);
-                EmailMessage.SetBody(BodyText);
-            end;
-        end;
-
-        // Send email using modern Email codeunit
-        if ShowDialog then begin
-            Email.OpenInEditor(EmailMessage);
-            exit(true); // Assume success when opening in editor
-        end else
-            exit(Email.Send(EmailMessage));
-    end;
-
-    local procedure CreateAndSendEmailWithAttachment(BodyFilePath: Text; DocNo: Code[20]; EmailAddress: Text; DocName: Text; ShowDialog: Boolean; AttachmentFilePath: Text): Boolean
-    var
-        EmailMessage: Codeunit "Email Message";
-        Email: Codeunit Email;
-        TempBlob: Codeunit "Temp Blob";
-        FileMgt: Codeunit "File Management";
-        InStr: InStream;
-        BodyText: Text;
-    begin
-        // Create email message with modern API
-        EmailMessage.Create(EmailAddress, DocName, '', true);
-
-        // Load email body if file exists
-        if BodyFilePath <> '' then begin
-            if FileMgt.ServerFileExists(BodyFilePath) then begin
-                FileMgt.BLOBImportFromServerFile(TempBlob, BodyFilePath);
-                TempBlob.CreateInStream(InStr);
-                InStr.ReadText(BodyText);
-                EmailMessage.SetBody(BodyText);
-            end;
-        end;
-
-        // Add attachment if file exists
-        if AttachmentFilePath <> '' then begin
-            if FileMgt.ServerFileExists(AttachmentFilePath) then begin
-                EmailMessage.AddAttachment(FileMgt.GetFileName(AttachmentFilePath), 'application/pdf', InStr);
-            end;
-        end;
-
-        // Send email using modern Email codeunit
-        if ShowDialog then begin
-            Email.OpenInEditor(EmailMessage);
-            exit(true); // Assume success when opening in editor
-        end else
-            exit(Email.Send(EmailMessage));
     end;
 
     // Funciton copided from standard table 77
@@ -362,23 +294,18 @@ codeunit 50903 "ACO_IntegrationMgt"
         ReportSelection: Record "Report Selections";
         TempAttachReportSelections: record "Report Selections" temporary;
         CustomReportSelection: Record "Custom Report Selection";
-        MailManagement: Codeunit "Mail Management";
+        Email: Codeunit Email;
         FoundBody: Boolean;
         FoundAttachment: Boolean;
         ServerEmailBodyFilePath: Text;
         EmailAddress: text;
-        ReportSelectionUsage: Enum "Report Selection Usage";
+        ReportUsageEnum: Enum "Report Selection Usage";
     begin
-        BINDSUBSCRIPTION(MailManagement);
+        // Convert integer to enum for modern BC compatibility
+        ReportUsageEnum := "Report Selection Usage".FromInteger(ReportUsage);
 
-        // Modern email body discovery using GetEmailBodyContent pattern
-        ReportSelectionUsage := "Report Selection Usage".FromInteger(ReportUsage);
-        FoundBody := GetEmailBodyVendor(ServerEmailBodyFilePath, ReportSelectionUsage, RecordVariant, VendorNo, EmailAddress);
-
-        UNBINDSUBSCRIPTION(MailManagement);
-
-        // Modern email attachment discovery using FindEmailAttachmentUsage pattern  
-        FoundAttachment := FindEmailAttachmentUsageVendor(ReportSelectionUsage, VendorNo, TempAttachReportSelections);
+        FoundBody := ReportSelection.GetEmailBodyForVend(ServerEmailBodyFilePath, ReportUsageEnum, RecordVariant, VendorNo, EmailAddress);
+        FoundAttachment := ReportSelection.FindEmailAttachmentUsageForVend(ReportUsageEnum, VendorNo, TempAttachReportSelections);
 
         CustomReportSelection.SETRANGE("Source Type", DATABASE::Vendor);
         CustomReportSelection.SETRANGE("Source No.", VendorNo);
@@ -391,84 +318,77 @@ codeunit 50903 "ACO_IntegrationMgt"
     LOCAL procedure SendEmailDirectly(ReportUsage: Integer; RecordVariant: Variant; DocNo: Code[20]; DocName: Text[150]; FoundBody: Boolean; FoundAttachment: Boolean; ServerEmailBodyFilePath: Text[250]; VAR DefaultEmailAddress: Text[250];
     ShowDialog: Boolean; VAR TempAttachReportSelections: Record "Report Selections" temporary; var CustomReportSelection: Record "Custom Report Selection" temporary) AllEmailsWereSuccessful: boolean;
     var
-        DocumentMailing: CodeUnit "Document-Mailing";
+        EmailMessage: Codeunit "Email Message";
+        Email: Codeunit Email;
         OfficeAttachmentManager: Codeunit "Office Attachment Manager";
         ServerAttachmentFilePath: text;
         EmailAddress: text;
         ReportSelection: Record "Report Selections";
-        ReportSelectionUsage: Enum "Report Selection Usage"; // Modern BC: Proper enum type handling
         MustSelectAndEmailBodyOrAttahmentErr: Label 'You must select an email body or attachment in report selection for %1.';
+        EmailBodyText: Text;
+        TempBlob: Codeunit "Temp Blob";
+        InStr: InStream;
     begin
         AllEmailsWereSuccessful := TRUE;
 
         //>>
         //ShowNoBodyNoAttachmentError(ReportUsage,FoundBody,FoundAttachment);
         IF NOT (FoundBody OR FoundAttachment) THEN BEGIN
-            ReportSelection.Usage := "Report Selection Usage".FromInteger(ReportUsage);
-            ERROR(MustSelectAndEmailBodyOrAttahmentErr, ReportSelection.usage);
+            ERROR(MustSelectAndEmailBodyOrAttahmentErr, ReportUsage);
         END;
         //<<
 
-        // Note: DocumentMailing.EmailFile signature changed - using modern Email codeunit approach
-        IF FoundBody AND NOT FoundAttachment THEN begin
-            // Modern email sending using Email codeunit and Email Message
-            if CreateAndSendEmail(ServerEmailBodyFilePath, DocNo, EmailAddress, DocName, ShowDialog, ReportUsage) then
-                AllEmailsWereSuccessful := true
-            else
-                AllEmailsWereSuccessful := false;
-        end;
+        IF FoundBody AND NOT FoundAttachment THEN BEGIN
+            // Read email body from file for modern email
+            if ServerEmailBodyFilePath <> '' then begin
+                TempBlob.CreateInStream(InStr);
+                InStr.ReadText(EmailBodyText);
+            end;
 
-        IF NOT FoundBody THEN begin
-            // Modern BC: Email system handles interaction tracking automatically
-            // Original 2018 functionality: InteractionMgt.SetEmailDraftLogging(TRUE);
-        end;
+            EmailMessage.Create(DefaultEmailAddress, 'Remittance Advice', EmailBodyText);
+            AllEmailsWereSuccessful := Email.Send(EmailMessage, Enum::"Email Scenario"::Default);
+        END;
 
         IF FoundAttachment THEN BEGIN
-            // Modern BC: Proper enum type handling for Report Selection Usage
-            ReportSelectionUsage := "Report Selection Usage".FromInteger(ReportUsage);
-            IF ReportSelectionUsage = "Report Selection Usage"::"P.Arch.Quote" THEN BEGIN
-                ReportSelection.Usage := ReportSelectionUsage;
-                CustomReportSelection.SETFILTER(Usage, ReportSelection.GETFILTER(ReportSelection.Usage));
-                IF CustomReportSelection.FINDFIRST THEN
-                    IF CustomReportSelection."Send To Email" <> '' THEN
-                        DefaultEmailAddress := CustomReportSelection."Send To Email";
-            END;
-
             WITH TempAttachReportSelections DO BEGIN
                 OfficeAttachmentManager.IncrementCount(COUNT - 1);
                 REPEAT
                 begin
                     EmailAddress := COPYSTR(
                     GetNextEmailAddressFromCustomReportSelection(CustomReportSelection, DefaultEmailAddress, Usage.AsInteger(), Sequence), 1, MAXSTRLEN(EmailAddress));
-                    // Modern BC: Using Email codeunit instead of deprecated DocumentMailing.EmailFile
                     ServerAttachmentFilePath := SaveReportAsPDF("Report ID", RecordVariant, "Custom Report Layout Code");
-                    AllEmailsWereSuccessful := AllEmailsWereSuccessful AND
-                        CreateAndSendEmailWithAttachment(ServerEmailBodyFilePath, DocNo, EmailAddress, DocName, ShowDialog, ServerAttachmentFilePath);
+
+                    // Create modern email with attachment
+                    Clear(EmailMessage);
+                    if ServerEmailBodyFilePath <> '' then begin
+                        TempBlob.CreateInStream(InStr);
+                        InStr.ReadText(EmailBodyText);
+                        EmailMessage.Create(EmailAddress, 'Remittance Advice', EmailBodyText);
+                    end else begin
+                        EmailMessage.Create(EmailAddress, 'Remittance Advice', '');
+                    end;
+
+                    EmailMessage.AddAttachment(ServerAttachmentFilePath, '', '');
+                    AllEmailsWereSuccessful := AllEmailsWereSuccessful AND Email.Send(EmailMessage, Enum::"Email Scenario"::Default);
                 end;
                 UNTIL NEXT = 0;
             END;
         END;
-        // Modern BC: Email system handles interaction tracking automatically
-        // Original 2018 functionality: InteractionMgt.SetEmailDraftLogging(FALSE);
-
         EXIT(AllEmailsWereSuccessful);
     end;
 
-    // Modern BC: Remittance functionality using custom enum extension values
+    // The Remittance is hidden behind standard option as it is not possible to extend it in this NAV version
     local procedure IsRemittanceReportUsage(ReportUsage: Integer) result: boolean;
     var
         ReportSelection: Record "Report Selections";
-        ReportSelectionUsage: Enum "Report Selection Usage";
     begin
-        // Modern BC: Using custom enum extension values for remittance functionality
-        ReportSelectionUsage := "Report Selection Usage".FromInteger(ReportUsage);
-
-        // remittance journal - using custom enum value
-        if ReportSelectionUsage = "Report Selection Usage"::"P.Arch.Quote" then begin
+        // remittance journal - using numeric values for compatibility
+        //if ReportUsage = 1116 then begin // P.Arch. Quote equivalent
+        if ReportUsage = ReportSelection.Usage::"P.Arch.Quote".AsInteger() then begin
             exit(true);
         end;
-        // remittance entries - using custom enum value  
-        if ReportSelectionUsage = "Report Selection Usage"::"P.Arch.Order" then begin
+        // remittance entries
+        if ReportUsage = ReportSelection.Usage::"P.Arch.Order".AsInteger() then begin // P.Arch. Order equivalent
             Exit(true)
         end;
 
@@ -476,15 +396,19 @@ codeunit 50903 "ACO_IntegrationMgt"
     end;
 
     procedure GetRemittanceJnlReportUsage() result: integer;
+    var
+        ReportSelection: Record "Report Selections";
     begin
-        // Modern BC: Using custom enum extension value for remittance journal
-        exit("Report Selection Usage"::"P.Arch.Quote".AsInteger());
+        // remittance journal - using numeric value for compatibility
+        Exit(ReportSelection.Usage::"P.Arch.Quote".AsInteger()); // P.Arch. Quote equivalent
     end;
 
     procedure GetRemittanceEntriesReportUsage() result: integer;
+    var
+        ReportSelection: Record "Report Selections";
     begin
-        // Modern BC: Using custom enum extension value for remittance entries
-        exit("Report Selection Usage"::"P.Arch.Order".AsInteger());
+        // remittance entries - using numeric value for compatibility
+        Exit(ReportSelection.Usage::"P.Arch.Order".AsInteger()); // P.Arch. Order equivalent
     end;
 
     // Funciton copided from standard table 77
@@ -503,7 +427,7 @@ codeunit 50903 "ACO_IntegrationMgt"
     end;
 
     // Funciton copided from standard table 77
-    LOCAL procedure GetNextEmailAddressFromCustomReportSelection(VAR CustomReportSelection: Record "Custom Report Selection"; DefaultEmailAddress: Text; UsageValue: Option; SequenceText: Text): Text
+    LOCAL procedure GetNextEmailAddressFromCustomReportSelection(VAR CustomReportSelection: Record "Custom Report Selection"; DefaultEmailAddress: Text; UsageValue: Integer; SequenceText: Text): Text
     var
         SequenceInteger: Integer;
     begin
@@ -516,74 +440,7 @@ codeunit 50903 "ACO_IntegrationMgt"
         END;
         EXIT(DefaultEmailAddress);
     end;
-
-    // Modern implementation of GetEmailBodyVendor functionality
-    local procedure GetEmailBodyVendor(var ServerEmailBodyFilePath: Text; ReportUsage: Enum "Report Selection Usage"; RecordVariant: Variant; VendorNo: Code[20]; var EmailAddress: Text): Boolean
-    var
-        ReportSelections: Record "Report Selections";
-        Vendor: Record Vendor;
-        CompanyInfo: Record "Company Information";
-        FileMgt: Codeunit "File Management";
-        DocumentMailing: Codeunit "Document-Mailing";
-    begin
-        // Get vendor email address
-        if Vendor.Get(VendorNo) then
-            EmailAddress := Vendor."E-Mail"
-        else
-            EmailAddress := '';
-
-        // Find report selection for email body
-        ReportSelections.SetRange(Usage, ReportUsage);
-        ReportSelections.SetRange("Use for Email Body", true);
-        if ReportSelections.FindFirst() then begin
-            // Generate email body file using report
-            ServerEmailBodyFilePath := FileMgt.ServerTempFileName('html');
-            if ReportSelections."Report ID" <> 0 then begin
-                Report.SaveAsHtml(ReportSelections."Report ID", ServerEmailBodyFilePath, RecordVariant);
-                exit(FileMgt.ServerFileExists(ServerEmailBodyFilePath));
-            end;
-        end;
-
-        exit(false);
-    end;
-
-    // Modern implementation of FindEmailAttachmentUsageVendor functionality  
-    local procedure FindEmailAttachmentUsageVendor(ReportUsage: Enum "Report Selection Usage"; VendorNo: Code[20]; var TempAttachReportSelections: Record "Report Selections" temporary): Boolean
-    var
-        ReportSelections: Record "Report Selections";
-        CustomReportSelection: Record "Custom Report Selection";
-    begin
-        TempAttachReportSelections.Reset();
-        TempAttachReportSelections.DeleteAll();
-
-        // Find standard report selections for attachments
-        ReportSelections.SetRange(Usage, ReportUsage);
-        ReportSelections.SetRange("Use for Email Attachment", true);
-        if ReportSelections.FindSet() then begin
-            repeat
-                TempAttachReportSelections := ReportSelections;
-                TempAttachReportSelections.Insert();
-            until ReportSelections.Next() = 0;
-        end;
-
-        // Find custom report selections for vendor
-        CustomReportSelection.SetRange("Source Type", Database::Vendor);
-        CustomReportSelection.SetRange("Source No.", VendorNo);
-        CustomReportSelection.SetRange(Usage, ReportUsage.AsInteger());
-        if CustomReportSelection.FindSet() then begin
-            repeat
-                if ReportSelections.Get(ReportUsage, CustomReportSelection.Sequence, CustomReportSelection."Report ID") then begin
-                    TempAttachReportSelections := ReportSelections;
-                    TempAttachReportSelections."Custom Report Layout Code" := CustomReportSelection."Custom Report Layout Code";
-                    if TempAttachReportSelections.Insert() then;
-                end;
-            until CustomReportSelection.Next() = 0;
-        end;
-
-        exit(not TempAttachReportSelections.IsEmpty());
-    end;
-
-    //#endregion Help Functions
+    //#region Help Functions
 
     //#region "Change CHG003421"
     ///<summary>It subscribes to event OnBeforePostPurchaseDoc to change to check if the prevent line compression is on. If it is, the system will add dimension to it.</summary>

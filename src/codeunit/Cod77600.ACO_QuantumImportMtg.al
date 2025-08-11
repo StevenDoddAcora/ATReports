@@ -81,10 +81,12 @@ Codeunit 50900 "ACO_QuantumImportMtg"
         xmlInvoiceImport: XmlPort ACO_InvoiceImport;
         InvImportBuffer: Record ACO_ImportBuffer temporary;
         ImportNo: Integer;
+        fileMgt: Codeunit "File Management";
     begin
         // IF the parameter have a value then it is auto-import otherwise run xml port in the normal way to ask for a file
         if (pFile <> '') then begin
-            //Modern TempBlob codeunit usage - simplified for BC
+            //Modern TempBlob codeunit usage - load file data first
+            fileMgt.BLOBImportFromServerFile(tempBlob, pFile);
             tempBlob.CreateInStream(inStr);
             xmlInvoiceImport.SetSource(inStr);
             xmlInvoiceImport.SetgFileName(pFile);
@@ -247,10 +249,12 @@ Codeunit 50900 "ACO_QuantumImportMtg"
         xmlCreditImport: XmlPort ACO_CreditImport;
         InvImportBuffer: Record ACO_ImportBuffer temporary;
         ImportNo: Integer;
+        fileMgt: Codeunit "File Management";
     begin
         // IF the parameter have a value then it is auto-import otherwise run xml port in the normal way to ask for a file
         if (pFile <> '') then begin
-            //Modern TempBlob codeunit usage
+            //Modern TempBlob codeunit usage - load file data first
+            fileMgt.BLOBImportFromServerFile(tempBlob, pFile);
             tempBlob.CreateInStream(inStr);
             //Import File
             xmlCreditImport.SetSource(inStr);
@@ -414,19 +418,19 @@ Codeunit 50900 "ACO_QuantumImportMtg"
             // Read entire file as text
             fileMgt.BLOBImportFromServerFile(tempBlob, pFile);
             tempBlob.CreateInStream(inStr);
-            
+
             // Process each line individually
             LineNumber := 0;
             ProcessedCount := 0;
-            
+
             while not inStr.EOS do begin
                 inStr.ReadText(CurrentLine);
                 LineNumber += 1;
-                
+
                 if CurrentLine <> '' then begin
                     // Parse CSV line into fields
                     FieldValues := CurrentLine.Split(',');
-                    
+
                     // Ensure we have at least 19 fields (positions 1 and 19 needed)
                     if FieldValues.Count >= 19 then begin
                         // Extract customer number (position 1) and exposure (position 19)
@@ -435,11 +439,11 @@ Codeunit 50900 "ACO_QuantumImportMtg"
                                 // Customer number processing
                                 Clear(lCustomerNo);
                                 Clear(lExposure);
-                                
+
                                 if Evaluate(lCustomerNo, FieldValues.Get(1)) then begin
                                     if FieldValues.Get(19) <> '' then
                                         Evaluate(lExposure, FieldValues.Get(19));
-                                    
+
                                     // Update customer exposure
                                     if lCustomer.Get(lCustomerNo) then begin
                                         lCustomer.Validate(ACO_Exposure, lExposure);
@@ -452,11 +456,11 @@ Codeunit 50900 "ACO_QuantumImportMtg"
                     end;
                 end;
             end;
-            
+
             // Log processing results
             if GuiAllowed then
                 Message('CSV Processing Complete: %1 lines processed, %2 customers updated', LineNumber, ProcessedCount);
-                
+
         end else begin
             //Xmlport.Run(XMLPort::ACO_ExposureImport, false, true);
             xmlExposureImport.Run();

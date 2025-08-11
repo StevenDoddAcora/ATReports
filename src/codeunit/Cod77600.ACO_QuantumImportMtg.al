@@ -353,8 +353,19 @@ Codeunit 50900 "ACO_QuantumImportMtg"
 
     procedure ManuallyImportQuantumExposureFile()
     begin
+        // Clear counters before import
+        gNoOfDocToImport := 0;
+        gNoOfDocCreated := 0;
+        gNoOfDocPosted := 0;
+        
         //If the param is blank the system will run xml port as per run
         ImportQuantumExposureFile('');
+        
+        // Show summary message after import
+        if GuiAllowed then begin
+            if gNoOfDocToImport <> 0 then
+                Message(gInfoLbl, gNoOfDocToImport, gNoOfDocCreated, gNoOfDocPosted);
+        end;
     end;
 
     procedure AutoImportQuantumExposure();
@@ -403,64 +414,15 @@ Codeunit 50900 "ACO_QuantumImportMtg"
         ImportFileName: Text;
         xmlExposureImport: XmlPort ACO_ExposureImport;
         fileMgt: Codeunit "File Management";
-        FileText: Text;
-        CurrentLine: Text;
-        LineNumber: Integer;
-        lCustomerNo: Code[20];
-        lExposure: Decimal;
-        lCustomer: Record Customer;
-        FieldValues: List of [Text];
-        ProcessedCount: Integer;
     begin
         // IF the parameter have a value then it is auto-import otherwise run xml port in the normal way to ask for a file
         if (pFile <> '') then begin
-            // NEW APPROACH: Direct CSV line processing to handle multi-line files
-            // Read entire file as text
+            //Prepare File - RESTORED 2018 NAV APPROACH
             fileMgt.BLOBImportFromServerFile(tempBlob, pFile);
             tempBlob.CreateInStream(inStr);
-
-            // Process each line individually
-            LineNumber := 0;
-            ProcessedCount := 0;
-
-            while not inStr.EOS do begin
-                inStr.ReadText(CurrentLine);
-                LineNumber += 1;
-
-                if CurrentLine <> '' then begin
-                    // Parse CSV line into fields
-                    FieldValues := CurrentLine.Split(',');
-
-                    // Ensure we have at least 19 fields (positions 1 and 19 needed)
-                    if FieldValues.Count >= 19 then begin
-                        // Extract customer number (position 1) and exposure (position 19)
-                        if FieldValues.Get(1) <> '' then begin
-                            if (StrPos(UPPERCASE(FieldValues.Get(1)), 'ACCOUNTREF') = 0) then begin
-                                // Customer number processing
-                                Clear(lCustomerNo);
-                                Clear(lExposure);
-
-                                if Evaluate(lCustomerNo, FieldValues.Get(1)) then begin
-                                    if FieldValues.Get(19) <> '' then
-                                        Evaluate(lExposure, FieldValues.Get(19));
-
-                                    // Update customer exposure
-                                    if lCustomer.Get(lCustomerNo) then begin
-                                        lCustomer.Validate(ACO_Exposure, lExposure);
-                                        lCustomer.Modify(false);
-                                        ProcessedCount += 1;
-                                    end;
-                                end;
-                            end;
-                        end;
-                    end;
-                end;
-            end;
-
-            // Log processing results
-            if GuiAllowed then
-                Message('CSV Processing Complete: %1 lines processed, %2 customers updated', LineNumber, ProcessedCount);
-
+            //Import File using XMLPort (same as 2018 NAV)
+            xmlExposureImport.SetSource(inStr);
+            xmlExposureImport.Import();
         end else begin
             //Xmlport.Run(XMLPort::ACO_ExposureImport, false, true);
             xmlExposureImport.Run();

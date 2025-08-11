@@ -10,8 +10,6 @@ xmlport 50927 "ACO_InvoiceImport"
     Caption = 'Invoice Import';
     Direction = Import;
     Format = VariableText;
-    RecordSeparator = '<CRLF>';
-    FieldSeparator = ',';
     UseRequestPage = false;
 
     schema

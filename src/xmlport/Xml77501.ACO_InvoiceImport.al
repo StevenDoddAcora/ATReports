@@ -10,15 +10,17 @@ xmlport 50927 "ACO_InvoiceImport"
     Caption = 'Invoice Import';
     Direction = Import;
     Format = VariableText;
+    RecordSeparator = '<CRLF>';
+    FieldSeparator = ',';
     UseRequestPage = false;
 
     schema
     {
         textelement(root)
         {
-            tableelement(ACO_ImportBuffer; "ACO_ImportBuffer")
+            tableelement(DummyCustomer; Customer)
             {
-                XmlName = 'ACO_ImportBuffer';
+                XmlName = 'DummyCustomer';
                 UseTemporary = true;
                 AutoReplace = false;
                 AutoSave = false;
@@ -94,66 +96,87 @@ xmlport 50927 "ACO_InvoiceImport"
                 }
                 textelement(Column21)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column22)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column23)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column24)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column25)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column26)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column27)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column28)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column29)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column30)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column31)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column32)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column33)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column34)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column35)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column36)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column37)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column38)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column39)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column40)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column41)
                 {
+                    MinOccurs = Zero;
                 }
                 textelement(Column_CurrencyCode)
                 {
@@ -292,7 +315,6 @@ xmlport 50927 "ACO_InvoiceImport"
             }
         }
     }
-
     requestpage
     {
 
@@ -314,8 +336,6 @@ xmlport 50927 "ACO_InvoiceImport"
     end;
 
     trigger OnPreXmlPort();
-    var
-        NoSeriesMgt: Codeunit NoSeriesManagement;
     begin
         ImportDate := Today;
         ImportTime := TIME;

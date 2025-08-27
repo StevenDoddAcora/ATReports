@@ -2,7 +2,7 @@
   "id": "8e7f1c2d-4a3b-4c5d-9e8f-1a2b3c4d5e6f",
   "name": "Avtrade Reports and Integration",
   "publisher": "Acora Limited",
-  "version": "1.0.0.0",
+  "version": "1.0.0.1",
   "brief": "A0177 Reports and Integration",
   "description": "This Business Central Extension contains Reports and Integration functionality for AvTrade by Acora Limited.",
   "privacyStatement": "https://www.acora.com/privacy-policy",
@@ -15,7 +15,7 @@
       "id": "fd30994e-4be9-4fd7-ad05-2953d66c1a93",
       "name": "AvTrade Core Application",
       "publisher": "Acora Limited",
-      "version": "1.0.0.0"
+      "version": "1.0.0.1"
     }
   ],
   "screenshots": [],

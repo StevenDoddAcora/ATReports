@@ -1,3 +1,17 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using Microsoft.Purchases.Vendor;
+using Microsoft.Purchases.Payables;
+using Microsoft.Finance.GeneralLedger.Journal;
+using Microsoft.Bank.BankAccount;
+using Microsoft.Finance.Currency;
+using Microsoft.Utilities;
+using Acora.AvTrade.MainApp;
+using Microsoft.Bank.Payment;
+using Microsoft.Finance.GeneralLedger.Setup;
+
+
 codeunit 50904 "ACO_PmtExpMgtGJL"
 {
     //#region "Documentation"

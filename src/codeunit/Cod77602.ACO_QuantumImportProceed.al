@@ -1,3 +1,17 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using Microsoft.Sales.Customer;
+using Microsoft.Finance.GeneralLedger.Account;
+using Microsoft.Sales.Document;
+using Microsoft.Finance.Currency;
+using Microsoft.Inventory.Item;
+using Microsoft.Utilities;
+using Acora.AvTrade.MainApp;
+using Microsoft.Sales.Posting;
+using System.Utilities;
+
+
 codeunit 50902 "ACO_QuantumImportProceed"
 {
     //#region "Documentation"

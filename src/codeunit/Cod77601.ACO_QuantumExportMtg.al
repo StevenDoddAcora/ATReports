@@ -1,3 +1,16 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using System.IO;
+using System.Utilities;
+using Microsoft.Sales.Customer;
+using Microsoft.Sales.Receivables;
+using Microsoft.Finance.Currency;
+using Microsoft.Utilities;
+using Acora.AvTrade.MainApp;
+using Microsoft.Finance.GeneralLedger.Setup;
+
+
 codeunit 50901 "ACO_QuantumExportMtg"
 {
     //#region "Documentation"

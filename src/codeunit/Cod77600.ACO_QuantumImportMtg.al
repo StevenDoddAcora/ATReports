@@ -1,3 +1,17 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using System.IO;
+using System.Utilities;
+using Microsoft.Utilities;
+using Acora.AvTrade.MainApp;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.Posting;
+using Microsoft.Sales.Customer;
+using Microsoft.Finance.Currency;
+using Microsoft.Finance.GeneralLedger.Account;
+
+
 Codeunit 50900 "ACO_QuantumImportMtg"
 {
     //#region "Documentation"
@@ -357,10 +371,10 @@ Codeunit 50900 "ACO_QuantumImportMtg"
         gNoOfDocToImport := 0;
         gNoOfDocCreated := 0;
         gNoOfDocPosted := 0;
-        
+
         //If the param is blank the system will run xml port as per run
         ImportQuantumExposureFile('');
-        
+
         // Show summary message after import
         if GuiAllowed then begin
             if gNoOfDocToImport <> 0 then

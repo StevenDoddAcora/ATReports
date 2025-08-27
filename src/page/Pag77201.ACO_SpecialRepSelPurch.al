@@ -1,3 +1,11 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using Acora.AvTrade.MainApp;
+using Microsoft.Foundation.Reporting;
+using System.Reflection;
+
+
 page 50901 "ACO_SpecialRepSelPurch"
 {
     //#region "Documentation"

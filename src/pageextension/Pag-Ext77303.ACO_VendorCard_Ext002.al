@@ -1,3 +1,11 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using Microsoft.Purchases.Vendor;
+using Acora.AvTrade.MainApp;
+using Microsoft.Foundation.Reporting;
+
+
 pageextension 50903 "ACO_VendorCard_Ext002" extends "Vendor Card"
 {
     //#region "Documentation"

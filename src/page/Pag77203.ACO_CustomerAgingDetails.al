@@ -1,3 +1,10 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using Microsoft.Sales.Customer;
+using Acora.AvTrade.MainApp;
+
+
 page 50903 "ACO_CustomerAgingDetails"
 {
     //#region Documentation

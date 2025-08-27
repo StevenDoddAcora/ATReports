@@ -1,3 +1,10 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using Acora.AvTrade.MainApp;
+using Microsoft.Bank.Payment;
+
+
 tableextension 50911 ACO_PaymentExportData_Ext002 extends "Payment Export Data"
 {
     //#region "Documentation"

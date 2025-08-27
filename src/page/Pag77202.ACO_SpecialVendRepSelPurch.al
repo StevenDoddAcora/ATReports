@@ -1,3 +1,12 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using Microsoft.Purchases.Vendor;
+using Microsoft.Utilities;
+using Acora.AvTrade.MainApp;
+using Microsoft.Foundation.Reporting;
+
+
 page 50902 "ACO_SpecialVendRepSelPurch"
 {
     //#region "Documentation"

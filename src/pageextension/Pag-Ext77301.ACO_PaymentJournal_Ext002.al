@@ -1,3 +1,12 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using System.IO;
+using Microsoft.Purchases.Vendor;
+using Microsoft.Finance.GeneralLedger.Journal;
+using Acora.AvTrade.MainApp;
+
+
 pageextension 50966 "ACO_PaymentJournal_Ext002" extends "Payment Journal"
 {
     //#region "Documentation"

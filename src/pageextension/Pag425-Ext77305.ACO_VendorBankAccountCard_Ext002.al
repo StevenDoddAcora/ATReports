@@ -1,3 +1,11 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using Microsoft.Purchases.Vendor;
+using Microsoft.Bank.BankAccount;
+using Acora.AvTrade.MainApp;
+
+
 pageextension 50905 ACO_BankAccountCard_Ext002 extends "Vendor Bank Account Card"
 {
     //#region "Documentation"

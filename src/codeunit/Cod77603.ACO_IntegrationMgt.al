@@ -1,3 +1,33 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using System.IO;
+using System.Utilities;
+using Microsoft.Finance.GeneralLedger.Ledger;
+using Microsoft.Purchases.Vendor;
+using Microsoft.Purchases.Payables;
+using Microsoft.Purchases.Document;
+using Microsoft.Sales.Customer;
+using Microsoft.Finance.GeneralLedger.Journal;
+using Microsoft.Sales.Document;
+using Microsoft.Purchases.History;
+using Microsoft.Sales.History;
+using Microsoft.Inventory.Item;
+using Microsoft.Utilities;
+using Microsoft.Foundation.Company;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Finance.Dimension;
+using Microsoft.Foundation.Reporting;
+using Microsoft.Foundation.Navigate;
+using Microsoft.Foundation.Attachment;
+using Acora.AvTrade.MainApp;
+using System.Threading;
+using System.EMail;
+using Microsoft.CRM.Outlook;
+using Microsoft.Purchases.Posting;
+using Microsoft.Sales.Posting;
+
+
 codeunit 50903 "ACO_IntegrationMgt"
 {
     //#region "Documentation"

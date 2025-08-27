@@ -1,3 +1,15 @@
+namespace Acora.AvTrade.ReportsAndIntegration;
+
+using System;
+using Microsoft.Sales.Customer;
+using Microsoft.Finance.GeneralLedger.Account;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.History;
+using Microsoft.Finance.Currency;
+using Microsoft.Inventory.Item;
+using Acora.AvTrade.MainApp;
+
+
 page 50900 "ACO_QuantumImportLog"
 {
     //#region "Documentation"
